@@ -1,0 +1,4272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JASS - Jainil's Awesome Stylesheet </title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="J_logo.png">
+    <script src="home.js"></script>
+    <script src="Jquery.js"></script>
+    <link rel="stylesheet" href="v3CSS.css">
+    <script src="v3JS.js"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body onload="LoadedJASS()">
+    <script>
+        //jquery
+        $(document).ready(function () {
+            $('.menuPlate').hide();
+            $('.menuBtn').hide();
+            $('.navMenu').click(function () {
+                $('.menuPlate').show();
+                $('.navMenu').hide();
+                $('.navMenu2').show();
+                $('.menuBtn').show();
+            });
+            $('.navMenu2').click(function () {
+                $('.menuPlate').hide();
+                $('.navMenu').show();
+                $('.navMenu2').hide();
+                $('.menuBtn').hide();
+            });
+
+            $('.closeReleases').click(function () {
+                $('.releases').hide();
+            });
+            $('.releaseMenu').click(function () {
+                $('.releases').show();
+            });
+
+            $('.closeReleases2').click(function () {
+                $('.releases2').hide();
+            });
+            $('.releaseMenu2').click(function () {
+                $('.releases2').show();
+            });
+
+            $('.titleRtoL').hide();
+            $('.titleRtoL').click(function () {
+                document.querySelector('.mainComponentsDetail').style.float = "right";
+                document.querySelector('.mainComponentsTitle').style.float = "left";
+                $('.titleRtoL').hide();
+                $('.titleLtoR').show();
+            });
+            $('.titleLtoR').click(function () {
+                document.querySelector('.mainComponentsDetail').style.float = "left";
+                document.querySelector('.mainComponentsTitle').style.float = "right";
+                $('.titleRtoL').show();
+                $('.titleLtoR').hide();
+            });
+            $('.outernavlnks').hide();
+            $('.abtus').click(function () {
+                $('.outernavlnks').show();
+                $('.abtus').hide();
+            });
+
+
+            $('.ResponsiveMenu').hide();
+            // $('.ResponsiveICON').hide();
+            // $('.ResponsiveICON2').hide();
+
+            $('.ResponsiveICON').click(function () {
+                $('.ResponsiveMenu').show();
+                $('.ResponsiveICON2').show();
+                $('.ResponsiveICON').hide();
+            });
+
+            $('.ResponsiveICON2').click(function () {
+                $('.ResponsiveMenu').hide();
+                $('.ResponsiveICON2').hide();
+                $('.ResponsiveICON').show();
+            });
+
+            //
+
+            $('.repocomp').click(function () {
+                $('.ResponsiveMenu').hide();
+            });
+
+            //
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //jquery
+        });
+    </script>
+    <nav>
+        <img src="J_logo.png" class="navLogo">
+        <span class="navHeading" title="JASS v3.0.0"> JASS </span>
+        <img src="menu.png" class="navMenu">
+        <img src="menu.png" class="navMenu2">
+    </nav>
+
+    <div class="menuPlate">
+        <div class="menu">
+            <input type="text" class="menuSearch" onblur="fout()" placeholder="Search here...">
+            <a href="#DOC_JASS">
+                <div  class="menuOpt"> Docs </div>
+            </a>
+            <hr>
+            <a href="#ALERTS_JASS" class="gstartedHidE">
+                <div class="menuOpt"> Get Started </div>
+            </a>
+            <hr>
+            <div class="menuOpt  releaseMenu"> What’s new </div>
+            <hr>
+            <a href="#">
+                <div class="menuOpt releaseMenu2"> About us </div>
+            </a>
+            <hr>
+            <a href="#">
+                <div class="menuOpt  abtus"> Contact us </div>
+            </a>
+            <div class="menuOpt  outernavlnks">
+                <div class="followlnksnav">
+                    <a href="https://www.facebook.com/jainil.soni.372"><img src="nfacebook.png" title="Facebook" class="flwlnks"></a>
+                    <a href="https://www.instagram.com/jainilsoni_1706/"><img src="ninstagram.png" title="Instagram"
+                            class="flwlnks"></a>
+                    <a href="https://github.com/jainilsoni1706"><img src="ngithub.png" title="Github"
+                            class="flwlnks"></a>
+                    <a href="https://www.linkedin.com/in/jainil-soni-117760211/"><img src="nlinkedin.png" title="Linkedin" class="flwlnks"></a>
+                    <a href="mailto:jainilsoni1706@gmail.com"><img src="nemail.png" title="Email" class="flwlnks"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="image" src="searchw.png" title="Search" class="menuBtn">
+
+
+
+
+
+    <div class="releases">
+        Released on 15<sup>th</sup>July 2021.
+        <hr class="hr">
+        <ul>
+            <li>First release </li>
+            
+            
+            <hr class="hr">
+            Released on 4<sup>th</sup>September 2021.
+            <hr class="hr">
+            <li>Second release </li>
+            <ol type="I">
+           <li>Bugs fixed</li>
+                <li> Disposable alerts added </li>
+            </ol>
+        </ul>
+        <!-- close -->
+        <button class="closeReleases"> Close </button>
+    </div>
+
+
+    <div class="releases2">
+        Message from JainiL
+        <hr class="hr">
+
+        <h4>heya users, it's me Jainil soni, developer of the JASS Framework.</h4>
+        <h4>Lateset version of JASS Framework v3.0.0 has been released.</h4>
+        <h4>This is a CSS Framework for those who are the beginners. </h4>
+
+        <!-- close -->
+        <button class="closeReleases2"> Close </button>
+    </div>
+
+    <!-- ========= -->
+
+
+    <main>
+        <div class="mainComponentsTitle">
+
+            <div class="allComponents">
+                <a href="#ALERTS_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                        version="1.1" data-view-component="true" height="16" width="16"
+                        class="octicon octicon-repo flex-shrink-0">
+                        <path fill-rule="evenodd"
+                            d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                        </path>
+                    </svg>
+                    <div class="compNames"> Alerts </div>
+                </a>
+
+                <a href="#BADGE_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                        version="1.1" data-view-component="true" height="16" width="16"
+                        class="octicon octicon-repo flex-shrink-0">
+                        <path fill-rule="evenodd"
+                            d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                        </path>
+                    </svg>
+                    <div class="compNames"> Badge </div>
+                </a>
+                <a href="#BUTTONS_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                        version="1.1" data-view-component="true" height="16" width="16"
+                        class="octicon octicon-repo flex-shrink-0">
+                        <path fill-rule="evenodd"
+                            d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                        </path>
+                    </svg>
+                    <div class="compNames"> Buttons </div>
+                </a>
+                <a href="#CARDS_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                        version="1.1" data-view-component="true" height="16" width="16"
+                        class="octicon octicon-repo flex-shrink-0">
+                        <path fill-rule="evenodd"
+                            d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                        </path>
+                    </svg>
+                    <div class="compNames"> Card </div>
+                </a>
+                <a href="#DROPDOWN_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                        version="1.1" data-view-component="true" height="16" width="16"
+                        class="octicon octicon-repo flex-shrink-0">
+                        <path fill-rule="evenodd"
+                            d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                        </path>
+                    </svg>
+                    <div class="compNames"> Dropdown </div>
+                </a>
+                <a href="#LISTGROUP_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                        version="1.1" data-view-component="true" height="16" width="16"
+                        class="octicon octicon-repo flex-shrink-0">
+                        <path fill-rule="evenodd"
+                            d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                        </path>
+                    </svg>
+                    <div class="compNames"> List Group </div>
+                </a>
+                <a href="#MODAL_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                        version="1.1" data-view-component="true" height="16" width="16"
+                        class="octicon octicon-repo flex-shrink-0">
+                        <path fill-rule="evenodd"
+                            d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                        </path>
+                    </svg>
+                    <div class="compNames"> Modal </div>
+                </a>
+                <a href="#NAVBAR_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                        version="1.1" data-view-component="true" height="16" width="16"
+                        class="octicon octicon-repo flex-shrink-0">
+                        <path fill-rule="evenodd"
+                            d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                        </path>
+                    </svg>
+                    <div class="compNames"> Navigation bar </div>
+                </a>
+                <!-- <a href="#PAGINATION_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                        version="1.1" data-view-component="true" height="16" width="16"
+                        class="octicon octicon-repo flex-shrink-0">
+                        <path fill-rule="evenodd"
+                            d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                        </path>
+                    </svg>
+                    <div class="compNames"> Paginaton </div>
+                </a> -->
+                <a href="#PROGRESSBAR_JASS" class="repocomp"> <svg aria-label="Repository" role="img"
+                        viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16"
+                        class="octicon octicon-repo flex-shrink-0">
+                        <path fill-rule="evenodd"
+                            d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                        </path>
+                    </svg>
+                    <div class="compNames"> Progress bar </div>
+                </a>
+                <a href="#SPINNER_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                        version="1.1" data-view-component="true" height="16" width="16"
+                        class="octicon octicon-repo flex-shrink-0">
+                        <path fill-rule="evenodd"
+                            d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                        </path>
+                    </svg>
+                    <div class="compNames"> Spinner </div>
+                </a>
+                  <a href="https://jainilsoni1706.github.io/newJASS/LiveServer.htm" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                        version="1.1" data-view-component="true" height="16" width="16"
+                        class="octicon octicon-repo flex-shrink-0">
+                        <path fill-rule="evenodd"
+                            d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                        </path>
+                    </svg>
+                    <div class="compNames"> HTML Editor </div> 
+                </a>
+               
+                <!-- <a href="#MESSAGE_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                        version="1.1" data-view-component="true" height="16" width="16"
+                        class="octicon octicon-repo flex-shrink-0">
+                        <path fill-rule="evenodd"
+                            d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                        </path>
+                    </svg>
+                    <div class="compNames"> Messages </div>
+                </a> -->
+            </div>
+            <hr class="lhr">
+            <div class="ldethed">
+                What is JASS?
+            </div>
+            <p class="ldetdet">
+                JASS is a css framework that useful to make reponsive and customizable website,
+                easy to use and user-friendly, just copy and paste that's it.
+            </p>
+            <hr class="lhr">
+            <div class="oldjasslink">
+                <a href="https://jainilsoni1706.github.io/jass/getJASS.htm"> v1.0.0 JASS (old version) </a>
+            </div>
+            <hr class="lhr">
+
+            <button class="titleLtoR"> Move this sidebar to Right side </button>
+            <button class="titleRtoL"> Move this sidebar to Left side </button>
+
+            <hr class="lhr">
+            <div class="followlinks">
+                <a href="https://www.facebook.com/jainil.soni.372"><img src="fb1.png" title="Facebook" class="flwlnks"></a>
+                <a href="https://www.instagram.com/jainilsoni_1706/"><img src="insta1.png" title="Instagram"
+                        class="flwlnks"></a>
+                <a href="https://github.com/jainilsoni1706"><img src="github1.png" title="Github" class="flwlnks"></a>
+                <a href="https://www.linkedin.com/in/jainil-soni-117760211/"><img src="linkedin.png" title="Linkedin" class="flwlnks"></a>
+                <a href="mailto:jainilsoni1706@gmail.com"><img src="email1.png" title="Email" class="flwlnks"></a>
+            </div>
+
+
+
+        </div>
+
+        <!-- break -->
+        <div class="mainComponentsDetail">
+<div class="DOC_JASS">
+            <div class="topicHeading"> Introduction </div>
+            <div class="topicDetails"> Get started with JASS,a css framework for building responsive, mobile-first
+                sites. </div>
+
+            <div class="blankspace"> </div>
+
+            <div class="topicHeading"> Quick start </div>
+            <div class="topicDetails"> Looking to quickly add JASS to your project? follow the steps shown below. </div>
+
+            <div class="blankspace"> </div>
+
+            <div class="topicHeading"> CSS </div>
+
+            <div class="topicDetails">Copy-paste the stylesheet
+                <font color="#e22e5d"> &lt;link&gt;</font> into your
+
+                <font color="#e22e5d"> &lt;head&gt;</font> before all other stylesheets to load our CSS.
+            </div>
+
+            <div class="blankspace"> </div>
+
+            <div class="codeSection">
+                <font color="#e22e5d">&lt;link </font>
+                <font color="#0d6efd"> href="</font>
+                <font color="brown"> https://jainilsoni1706.github.io/newJASS/v3CSS.css</font>
+                <font color="#0d6efd">" </font>
+                <font color="#0d6efd"> rel="</font>
+                <font color="brown"> stylesheet</font>
+                <font color="#0d6efd">"</font>
+                <font color="#e22e5d">&gt;</font>
+            </div>
+
+
+            <div class="blankspace"> </div>
+
+            <div class="topicHeading"> JavaScript </div>
+
+            <div class="topicDetails">
+                Many of our components require the use of JavaScript to function.
+                Copy-paste the
+                <font color="#e22e5d"> &lt;script&gt;</font> into your
+                either
+                <font color="#e22e5d"> &lt;head&gt;</font> or
+                <font color="#e22e5d"> &lt;body&gt;</font>tag
+            </div>
+
+            <div class="blankspace"> </div>
+
+            <div class="codeSection">
+                <font color="#e22e5d">&lt;script </font>
+                <font color="#0d6efd"> src="</font>
+                <font color="brown">https://jainilsoni1706.github.io/newJASS/v3JS.js</font>
+                <font color="#0d6efd">"</font>
+                <font color="#e22e5d">&gt;</font>
+                <font color="#e22e5d">&lt;/script&gt; </font>
+            </div>
+
+            <div class="blankspace"> </div>
+
+            <div class="topicHeading"> HTML5 Doctype </div>
+
+            <div class="topicDetails">
+                JASS requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling, but
+                including it shouldn’t cause any considerable hiccups.
+            </div>
+            <div class="blankspace"> </div>
+            <div class="codeSection">
+
+                <font color="green"> &lt;!DOCTYPE html&gt; </font><br>
+                <font color="#e22e5d">&lt;html&gt;</font><br><br>
+                <font color="brown"> &nbsp; . . . . . </font><br><br>
+                <font color="#e22e5d">&lt;/html&gt;</font>
+            </div>
+
+
+            <div class="blankspace"> </div>
+
+            <div class="topicHeading"> Responsive meta tag </div>
+
+            <div class="topicDetails">
+                JASS is developed mobile first, a strategy in which we optimize code for mobile devices first and then
+                scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming
+                for all devices, add the responsive viewport meta tag to your <font color="#e22e5d">&lt;head&gt;</font>.
+            </div>
+
+            <div class="blankspace"> </div>
+
+            <div class="codeSection">
+                <font color="#e22e5d">&lt;meta</font>
+                <font color="#0d6efd">name="</font>
+                <font color="brown">viewport</font>
+                <font color="##0d6efd">" content="</font>
+                <font color="brown">width=device-width, initial-scale=1</font>
+                <font color="##0d6efd">"</font>
+                <font color="#e22e5d">&gt;</font>
+            </div>
+
+            <div class="blankspace"> </div>
+            <div class="blankspace"> </div>
+
+            Advertisement
+            <br><br>
+            <div class="advtBox">
+                <img src="html5.png" class="advtimg">
+                <div class="advttxt">
+                    this is an advertisement sample
+                </div>
+            </div>
+
+            </div>
+            <div class="blankspace"> </div>
+
+
+
+            <!-- -----------------alerts------------------------- -->
+            <div class="blankspace"> </div>
+            <div id="ALERTS_JASS">
+
+                <div class="topicHeading"> Alert </div>
+
+                <div class="topicDetails">
+                    Provide contextual feedback messages for typical user actions with the handful of available and
+                    flexible alert messages.
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+                    <div class="normal-alerts-red">
+                        This is a red color alert box
+                    </div>
+
+                    <div class="normal-alerts-green">
+                        This is a green color alert box
+                    </div>
+
+                    <div class="normal-alerts-blue">
+                        This is a blue color alert box
+                    </div>
+
+                    <div class="normal-alerts-yellow">
+                        This is a yellow color alert box
+                    </div>
+
+                    <div class="normal-alerts-pink">
+                        This is a pink color alert box
+                    </div>
+
+                    <div class="normal-alerts-orange">
+                        This is an orange color alert box
+                    </div>
+
+                    <div class="normal-alerts-cyan">
+                        This is a cyan color alert box
+                    </div>
+
+                    <div class="normal-alerts-black">
+                        This is a black color alert box
+                    </div>
+
+                    <div class="normal-alerts-white">
+                        This is a white color alert box
+                    </div>
+
+                    <div class="normal-alerts-multi">
+                        This is a multi color alert box
+                    </div>
+                </div>
+
+                <div class="codeSection">
+                    &lt;div class="normal-alerts-red"&gt;
+                    This is a red color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-green"&gt;
+                    This is a green color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-blue"&gt;
+                    This is a blue color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-yellow"&gt;
+                    This is a yellow color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-pink"&gt;
+                    This is a pink color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-orange"&gt;
+                    This is an orange color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-cyan"&gt;
+                    This is a cyan color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-black"&gt;
+                    This is a black color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-white"&gt;
+                    This is a white color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-multi"&gt;
+                    This is a multi color alert box
+                    &lt;/div&gt;
+                </div>
+
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Colored link </div>
+
+
+                <div class="blankspace"> </div>
+
+
+
+
+                <div class="showCase">
+                    <div class="normal-alerts-red">
+                        This is a <a href="#">red</a> color alert box
+                    </div>
+
+                    <div class="normal-alerts-green">
+                        This is a <a href="#">green</a> color alert box
+                    </div>
+
+                    <div class="normal-alerts-blue">
+                        This is a <a href="#">blue</a> color alert box
+                    </div>
+
+                    <div class="normal-alerts-yellow">
+                        This is a <a href="#">yellow</a> color alert box
+                    </div>
+
+                    <div class="normal-alerts-pink">
+                        This is a <a href="#">pink</a> color alert
+                    </div>
+
+                    <div class="normal-alerts-orange">
+                        This is an <a href="#">orange</a> color alert box
+                    </div>
+
+                    <div class="normal-alerts-cyan">
+                        This is a <a href="#">cyan</a> color alert box
+                    </div>
+
+                    <div class="normal-alerts-black">
+                        This is a <a href="#">black</a> color alert box
+                    </div>
+
+                    <div class="normal-alerts-white">
+                        This is a <a href="#">white</a> color alert box
+                    </div>
+
+                    <div class="normal-alerts-multi">
+                        This is a <a href="#">multi</a> color alert box
+                    </div>
+                </div>
+
+                <div class="codeSection">
+                    &lt;div class="normal-alerts-red"&gt;
+                    This is a &lt;a href="#"&gt;red&lt;/a&gt; color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-green"&gt;
+                    This is a &lt;a href="#"&gt;green&lt;/a&gt; color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-blue"&gt;
+                    This is a &lt;a href="#"&gt;blue&lt;/a&gt; color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-yellow"&gt;
+                    This is a &lt;a href="#"&gt;yellow&lt;/a&gt; color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-pink"&gt;
+                    This is a &lt;a href="#"&gt;pink&lt;/a&gt; color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-orange"&gt;
+                    This is an &lt;a href="#"&gt;orange&lt;/a&gt; color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-cyan"&gt;
+                    This is a &lt;a href="#"&gt;cyan&lt;/a&gt; color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-black"&gt;
+                    This is a &lt;a href="#"&gt;black&lt;/a&gt; color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-white"&gt;
+                    This is a &lt;a href="#"&gt;white&lt;/a&gt; color alert box
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-multi"&gt;
+                    This is a &lt;a href="#"&gt;multi&lt;/a&gt; color alert box
+                    &lt;/div&gt;
+                </div>
+
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Additional content </div>
+                <div class="topicDetails">
+                    Alerts can also contain additional HTML elements like headings, paragraphs and dividers.
+                </div>
+
+                <div class="blankspace"> </div>
+
+                <div class="showCase">
+
+                    <div class="normal-alerts-red">
+                        <h3>Hurray!!!</h3>
+                        <p>You had participated in our contest and fortunately you have won a NewYork trip for 12 days.
+                        </p>
+                        <hr class="Add_Alert-hrline">
+                        <p> Have a good trip </p>
+                    </div>
+
+                    <div class="normal-alerts-green">
+                        <h3>letting you know</h3>
+                        <p>We are hiring a full-stack javascript developer!
+                            Submit your response to us before due date.</p>
+                        <hr class="Add_Alert-hrline">
+                        <p> Don't forget to attach your Certificates with your resume. </p>
+                    </div>
+
+                    <div class="normal-alerts-blue">
+                        <h3>Congratulation</h3>
+                        <p>You have been credited with 10$ in your account!
+                            Cause you bought 10 item from our store.</p>
+                        <hr class="Add_Alert-hrline">
+                        <p> Have a good day </p>
+                    </div>
+
+                    <div class="normal-alerts-yellow">
+                        <h3>Alert</h3>
+                        <p> Our server has been attacked by the hackers. so don't do any transactions for a while. </p>
+                        <hr class="Add_Alert-hrline">
+                        <p> we won't take any responsibility if you did transaction for now and your account got hacked.
+                        </p>
+                    </div>
+
+                    <div class="normal-alerts-cyan">
+                        <h3>Instagram</h3>
+                        <p>User_001 has sent you a video message..</p>
+                        <hr class="Add_Alert-hrline">
+                        <p> 12:00 </p>
+                    </div>
+
+                </div>
+
+                <div class="codeSection">
+
+                    &lt;div class="normal-alerts-red"&gt; <br>
+                    &lt;h3&gt;Hurray!!!&lt;/h3&gt; <br>
+                    &lt;p&gt;You had participated in our contest and fortunately you have won a NewYork trip for 12
+                    days.
+                    &lt;/p&gt; <br>
+                    &lt;hr class="Add_Alert-hrline"&gt; <br>
+                    &lt;p&gt; Have a good trip &lt;/p&gt; <br>
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-green"&gt;<br>
+                    &lt;h3&gt;letting you know&lt;/h3&gt;<br>
+                    &lt;p&gt;We are hiring a full-stack javascript developer!
+                    Submit your response to us before due date.&lt;/p&gt;<br>
+                    &lt;hr class="Add_Alert-hrline"&gt;<br>
+                    &lt;p&gt; Don't forget to attach your Certificates with your resume. &lt;/p&gt;<br>
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-blue"&gt;<br>
+                    &lt;h3&gt;Congratulation&lt;/h3&gt;<br>
+                    &lt;p&gt;You have been credited with 10$ in your account!
+                    Cause you bought 10 item from our store.&lt;/p&gt;<br>
+                    &lt;hr class="Add_Alert-hrline"&gt;<br>
+                    &lt;p&gt; Have a good day &lt;/p&gt;<br>
+                    &lt;/div&gt;
+                    <br><br>
+                    &lt;div class="normal-alerts-yellow"&gt;<br>
+                    &lt;h3&gt;Alert&lt;/h3&gt;<br>
+                    &lt;p&gt; Our server has been attacked by the hackers. so don't do any transactions for a while.
+                    &gt;/p&gt;<br>
+                    &lt;hr class="Add_Alert-hrline"&gt;
+                    &lt;p&gt; we won't take any responsibility if you did transaction for now and your account got
+                    hacked.
+                    &lt;/p&gt;<br>
+                    &lt;/div&gt;<br>
+                    <br><br>
+
+                    &lt;div class="normal-alerts-cyan"&gt;<br>
+                    &lt;h3&gt;Instagram&lt;/h3&gt;<br>
+                    &lt;p&gt;User_001 has sent you a video message..&lt;/p&gt;<br>
+                    &lt;hr class="Add_Alert-hrline"&gt;<br>
+                    &lt;p&gt; 12:00 &lt;/p&gt;<br>
+                    &lt;/div&gt;
+
+                </div>
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> ICONS with Alerts </div>
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+
+                    <div class="icon-alerts-red">
+                        <svg id="exclamation-triangle-fill" style="margin-right: 15px;" height="30px" width="30px"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                            </path>
+                        </svg>
+                        This is a error alert
+                    </div>
+
+                    <div class="icon-alerts-green">
+                        <svg id="check-circle-fill" style="margin-right: 15px;" height="30px" width="30px"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                            </path>
+                        </svg>
+                        This is a success alert
+                    </div>
+
+                    <div class="icon-alerts-yellow">
+                        <svg id="exclamation-triangle-fill" style="margin-right: 15px;" height="30px" width="30px"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                            </path>
+                        </svg>
+                        This is a warning alert
+                    </div>
+
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;div class="icon-alerts-red"&gt; <br>
+                    &lt;svg id="exclamation-triangle-fill" style="margin-right: 15px;" height="30px" width="30px"
+                    fill="currentColor" viewBox="0 0 16 16"&gt; <br>
+                    &lt;path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889
+                    0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1
+                    5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"&gt;&lt;/path&gt;<br>
+                    &lt;/svg&gt; <br>
+                    This is a error alert <br>
+                    &lt;/div&gt; <br><br>
+
+                    &lt;div class="icon-alerts-green">
+                    &lt;svg id="check-circle-fill" style="margin-right: 15px;" height="30px" width="30px"
+                    fill="currentColor" viewBox="0 0 16 16"&gt;<br>
+                    &lt;path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384
+                    7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0
+                    0-.01-1.05z"&gt;&lt;/path&gt;<br>
+                    &lt;/svg&gt; <br>
+                    This is a success alert <br>
+                    &lt;/div&gt; <br><br>
+
+                    &lt;div class="icon-alerts-yellow"&gt; <br>
+                    &lt;svg id="exclamation-triangle-fill" style="margin-right: 15px;" height="30px" width="30px"
+                    fill="currentColor" viewBox="0 0 16 16"&gt;<br>
+                    &lt;path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889
+                    0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1
+                    5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"&gt;&lt;/path&gt;<br>
+                    &lt;/svg&gt; <br>
+                    This is a warning alert <br>
+                    &lt;/div&gt; <br>
+
+                </div>
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Dark colored alerts </div>
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+
+                    <div class="dark-alert-red">
+                        This is dark red colored alert
+                    </div>
+
+                    <div class="dark-alert-green">
+                        This is dark green colored alert
+                    </div>
+
+                    <div class="dark-alert-blue">
+                        This is dark blue colored alert
+                    </div>
+
+                    <div class="dark-alert-yellow">
+                        This is dark yellow colored alert
+                    </div>
+
+                    <div class="dark-alert-cyan">
+                        This is dark cyan colored alert
+                    </div>
+                </div>
+
+                <div class="codeSection">
+                    &lt;div class="dark-alert-red"&gt;<br>
+                    This is dark red colored alert<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;div class="dark-alert-green"&gt;<br>
+                    This is dark green colored alert<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;div class="dark-alert-blue"&gt;<br>
+                    This is dark blue colored alert<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;div class="dark-alert-yellow"&gt;<br>
+                    This is dark yellow colored alert<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;div class="dark-alert-cyan"&gt;<br>
+                    This is dark cyan colored alert<br>
+                    &lt;/div&gt;
+                </div>
+
+
+
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Top Accent Border </div>
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+
+                    <div class="upperBorder-alert-red">
+                        <h3> This is a red alert with upper border </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, sed aliquam. Praesentium,
+                            maxime architecto ipsa id unde atque minus obcaecati tenetur consequuntur est alias neque
+                            enim voluptatibus reiciendis quam laboriosam.</p>
+                    </div>
+
+                    <div class="upperBorder-alert-green">
+                        <h3> This is a green alert with upper border </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, sed aliquam. Praesentium,
+                            maxime architecto ipsa id unde atque minus obcaecati tenetur consequuntur est alias neque
+                            enim voluptatibus reiciendis quam laboriosam.</p>
+                    </div>
+
+                    <div class="upperBorder-alert-blue">
+                        <h3> This is a blue alert with upper border </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, sed aliquam. Praesentium,
+                            maxime architecto ipsa id unde atque minus obcaecati tenetur consequuntur est alias neque
+                            enim voluptatibus reiciendis quam laboriosam.</p>
+                    </div>
+
+                    <div class="upperBorder-alert-yellow">
+                        <h3> This is a yellow alert with upper border </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, sed aliquam. Praesentium,
+                            maxime architecto ipsa id unde atque minus obcaecati tenetur consequuntur est alias neque
+                            enim voluptatibus reiciendis quam laboriosam.</p>
+                    </div>
+
+                    <div class="upperBorder-alert-cyan">
+                        <h3> This is a cyan alert with upper border </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, sed aliquam. Praesentium,
+                            maxime architecto ipsa id unde atque minus obcaecati tenetur consequuntur est alias neque
+                            enim voluptatibus reiciendis quam laboriosam.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;div class="upperBorder-alert-red"&gt;<br>
+                    &lt;h3&gt; This is a red alert with upper border &lt;/h3&gt;<br>
+                    &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, sed aliquam.
+                    Praesentium,
+                    maxime architecto ipsa id unde atque minus obcaecati tenetur consequuntur est alias neque
+                    enim voluptatibus reiciendis quam laboriosam.&lt;/p&gt;<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;div class="upperBorder-alert-green"&gt;<br>
+                    &lt;h3&gt; This is a green alert with upper border &lt;/h3&gt;<br>
+                    &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, sed aliquam.
+                    Praesentium,
+                    maxime architecto ipsa id unde atque minus obcaecati tenetur consequuntur est alias neque
+                    enim voluptatibus reiciendis quam laboriosam.&lt;/p&gt;<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;div class="upperBorder-alert-blue"&gt;<br>
+                    &lt;h3&gt; This is a blue alert with upper border &lt;/h3&gt;<br>
+                    &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, sed aliquam.
+                    Praesentium,
+                    maxime architecto ipsa id unde atque minus obcaecati tenetur consequuntur est alias neque
+                    enim voluptatibus reiciendis quam laboriosam.&lt;/p&gt;<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;div class="upperBorder-alert-yellow"&gt;<br>
+                    &lt;h3&gt; This is a yellow alert with upper border &lt;/h3&gt;<br>
+                    &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, sed aliquam.
+                    Praesentium,
+                    maxime architecto ipsa id unde atque minus obcaecati tenetur consequuntur est alias neque
+                    enim voluptatibus reiciendis quam laboriosam.&lt;/p&gt;<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;div class="upperBorder-alert-cyan"&gt;<br>
+                    &lt;h3&gt; This is a cyan alert with upper border &lt;/h3&gt;<br>
+                    &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, sed aliquam.
+                    Praesentium,
+                    maxime architecto ipsa id unde atque minus obcaecati tenetur consequuntur est alias neque
+                    enim voluptatibus reiciendis quam laboriosam.&lt;/p&gt;<br>
+                    &lt;/div&gt;
+
+
+                </div>
+
+
+
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> disposable alert </div>
+
+                <div class="topicDetails">
+                    Alerts that invicible after 10 second.
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+
+                    <div class="dark-alert-red   invi10s1">
+                        This is dark red colored alert
+                    </div>
+
+                    <div class="dark-alert-green   invi10s2">
+                        This is dark green colored alert
+                    </div>
+
+                    <div class="dark-alert-blue   invi10s3">
+                        This is dark blue colored alert
+                    </div>
+
+                    <div class="dark-alert-yellow   invi10s4">
+                        This is dark yellow colored alert
+                    </div>
+
+                    <div class="dark-alert-cyan   invi10s5">
+                        This is dark cyan colored alert
+                    </div>
+                </div>
+
+                <div class="codeSection">
+                    &lt;div class="dark-alert-red &nbsp; invi10s1"&gt;<br>
+                    This is dark red colored alert<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;div class="dark-alert-green &nbsp; invi10s2"&gt;<br>
+                    This is dark green colored alert<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;div class="dark-alert-blue &nbsp; invi10s3"&gt;<br>
+                    This is dark blue colored alert<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;div class="dark-alert-yellow &nbsp; invi10s4"&gt;<br>
+                    This is dark yellow colored alert<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;div class="dark-alert-cyan &nbsp; invi10s5"&gt;<br>
+                    This is dark cyan colored alert<br>
+                    &lt;/div&gt;
+                </div>
+
+
+
+
+
+
+            </div>
+
+            <!-- -----------------alerts------------------------- -->
+
+
+            <!-- -----------------badges------------------------- -->
+
+            <div class="blankspace"> </div>
+
+            <div id="BADGE_JASS">
+
+                <div class="topicHeading"> Badges </div>
+
+                <div class="topicDetails">
+                    Documentation and examples for badges, our small count and labeling component.
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+
+                    <div class="flexboxROW">
+                        <div class="simple-noti-badge-red">
+                            1
+                        </div>
+
+                        <div class="simple-noti-badge-yellow">
+                            1
+                        </div>
+
+                        <div class="simple-noti-badge-grey">
+                            1
+                        </div>
+
+                        <div class="simple-noti-badge-purple">
+                            1
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="codeSection">
+                    &lt;div class="simple-noti-badge-red"&gt;<br>
+                    1 <br>
+                    &lt;/div&gt; <br><br>
+
+                    &lt;div class="simple-noti-badge-yellow"&gt;<br>
+                    1 <br>
+                    &lt;/div&gt; <br><br>
+
+                    &lt;div class="simple-noti-badge-grey"&gt; <br>
+                    1 <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="simple-noti-badge-purple"&gt; <br>
+                    1 <br>
+                    &lt;/div&gt;
+
+                </div>
+
+
+                <div class="blankspace"> </div>
+
+
+                <div class="topicHeading"> Badges of ICON </div>
+
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+                <div class="showCase">
+
+                    <div class="simple-noti-badge-yellow  mablebdge">
+                        9+
+                    </div>
+                    <img title="JASS" src="J_logo.png" class="notif-badge">
+                    <div class="simple-noti-badge-red  mablebdge">
+                        3
+                    </div>
+                    <img title="Instagram" src="ninstagram.png" class="notif-badge">
+                    <div class="simple-noti-badge-grey  mablebdge">
+                        2
+                    </div>
+                    <img title="Linkedin" src="nlinkedin.png" class="notif-badge">
+                    <div class="simple-noti-badge-yellow  mablebdge">
+                        1
+                    </div>
+                    <img title="Facebook" src="nfacebook.png" class="notif-badge">
+
+                </div>
+
+
+
+                <div class="codeSection">
+
+
+                    &lt;div class="simple-noti-badge-yellow mablebdge"&gt; <br>
+                    9+ <br>
+                    &lt;/div&gt; <br>
+                    &lt;img title="JASS" src="J_logo.png" class="notif-badge"&gt;
+                    <br> <br>
+                    &lt;div class="simple-noti-badge-red mablebdge"&gt; <br>
+                    3 <br>
+                    &lt;/div&gt; <br>
+                    &lt;img title="Instagram" src="ninstagram.png" class="notif-badge"&gt; <br> <br>
+                    &lt;div class="simple-noti-badge-grey mablebdge"&gt; <br>
+                    2 <br>
+                    &lt;/div&gt; <br>
+                    &lt;img title="Linkedin" src="nlinkedin.png" class="notif-badge"&gt; <br> <br>
+                    &lt;div class="simple-noti-badge-yellow mablebdge"&gt; <br>
+                    1 <br>
+                    &lt;/div&gt; <br>
+                    &lt;img title="Facebook" src="nfacebook.png" class="notif-badge"&gt;
+
+
+                </div>
+
+
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+                <div class="showCase">
+
+                    <div class="simple-noti-badge-red  notif-badge2">
+                        5
+                    </div>
+                    <div class="btn-badges-blue">
+                        Inbox
+                    </div>
+
+                    <div class="simple-noti-badge-red  notif-badge2">
+                        5
+                    </div>
+                    <div class="btn-badges-purple">
+                        Inbox
+                    </div>
+
+                    <div class="simple-noti-badge-red  notif-badge2">
+                        5
+                    </div>
+                    <div class="btn-badges-black">
+                        Inbox
+                    </div>
+
+                </div>
+
+
+
+                <div class="codeSection">
+
+
+                    &lt;div class="simple-noti-badge-red notif-badge2"&gt; <br>
+                    5 <br>
+                    &lt;/div&gt; <br>
+                    &lt;div class="btn-badges-blue"&gt; <br>
+                    Inbox <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="simple-noti-badge-red notif-badge2"&gt; <br>
+                    5 <br>
+                    &lt;/div&gt; <br>
+                    &lt;div class="btn-badges-purple"&gt; <br>
+                    Inbox <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="simple-noti-badge-red notif-badge2"&gt; <br>
+                    5 <br>
+                    &lt;/div&gt; <br>
+                    &lt;div class="btn-badges-black"&gt; <br>
+                    Inbox <br>
+                    &lt;/div&gt;
+
+                </div>
+
+
+
+                <div class="blankspace"> </div>
+
+                <div class="showCase">
+                    <div class="flexboxROW">
+                        <div class="rect-badge-red">
+                            NEW
+                        </div>
+
+                        <div class="rect-badge-purple">
+                            NEW
+                        </div>
+
+                        <div class="rect-badge-blue">
+                            NEW
+                        </div>
+
+                        <div class="rect-badge-cyan">
+                            NEW
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="codeSection">
+
+                    &lt;div class="rect-badge-red"&gt; <br>
+                    NEW <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="rect-badge-purple"&gt; <br>
+                    NEW <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="rect-badge-blue"&gt; <br>
+                    NEW <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="rect-badge-cyan"&gt; <br>
+                    NEW <br>
+                    &lt;/div&gt;
+
+                </div>
+
+
+
+            </div>
+
+            <!-- -----------------badges------------------------- -->
+
+
+            <!-- -----------------button------------------------- -->
+
+            <div class="blankspace"> </div>
+
+            <div id="BUTTONS_JASS">
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Buttons </div>
+
+                <div class="topicDetails">
+                    Use JASS’s custom button styles for actions in forms, dialogs, and more with support for multiple
+                    sizes, states, and more.
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+
+                    <button class="simple-btn-red">
+                        Red
+                    </button>
+
+                    <button class="simple-btn-green">
+                        Green
+                    </button>
+
+                    <button class="simple-btn-blue">
+                        Blue
+                    </button>
+
+                    <button class="simple-btn-yellow">
+                        Yellow
+                    </button>
+
+                    <button class="simple-btn-grey">
+                        Grey
+                    </button>
+
+                    <button class="simple-btn-pink">
+                        Pink
+                    </button>
+
+                    <button class="simple-btn-cyan">
+                        Cyan
+                    </button>
+
+                    <button class="simple-btn-purple">
+                        Purple
+                    </button>
+
+                    <button class="simple-btn-black">
+                        Black
+                    </button>
+
+                    <button class="simple-btn-white">
+                        White
+                    </button>
+
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;button class="simple-btn-red"&gt; <br>
+                    Red <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-green"&gt; <br>
+                    Green <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-blue"&gt; <br>
+                    Blue <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-yellow"&gt; <br>
+                    Yellow <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-grey"&gt; <br>
+                    Grey <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-pink"&gt; <br>
+                    Pink <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-cyan"&gt; <br>
+                    Cyan <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-purple"&gt; <br>
+                    Purple <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-black"&gt; <br>
+                    Black <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-white"&gt; <br>
+                    White <br>
+                    &lt;/button&gt;
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+
+                    <button class="simple-btn-red-hover">
+                        Red
+                    </button>
+
+                    <button class="simple-btn-green-hover">
+                        Green
+                    </button>
+
+                    <button class="simple-btn-blue-hover">
+                        Blue
+                    </button>
+
+                    <button class="simple-btn-yellow-hover">
+                        Yellow
+                    </button>
+
+                    <button class="simple-btn-grey-hover">
+                        Grey
+                    </button>
+
+                    <button class="simple-btn-pink-hover">
+                        Pink
+                    </button>
+
+                    <button class="simple-btn-cyan-hover">
+                        Cyan
+                    </button>
+
+                    <button class="simple-btn-purple-hover">
+                        Purple
+                    </button>
+
+                    <button class="simple-btn-black-hover">
+                        Black
+                    </button>
+
+                    <button class="simple-btn-white-hover">
+                        White
+                    </button>
+
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;button class="simple-btn-red-hover"&gt; <br>
+                    Red <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-green-hover"&gt; <br>
+                    Green <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-blue-hover"&gt; <br>
+                    Blue <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-yellow-hover"&gt; <br>
+                    Yellow <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-grey-hover"&gt; <br>
+                    Grey <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-pink-hover"&gt; <br>
+                    Pink <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-cyan-hover"&gt; <br>
+                    Cyan <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-purple-hover"&gt; <br>
+                    Purple <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-black-hover"&gt; <br>
+                    Black <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-white-hover"&gt; <br>
+                    White <br>
+                    &lt;/button&gt;
+
+
+                </div>
+
+
+
+
+
+                <div class="showCase">
+
+                    <button class="nc-btn-red">
+                        Red
+                    </button>
+
+                    <button class="nc-btn-green">
+                        Green
+                    </button>
+
+                    <button class="nc-btn-blue">
+                        Blue
+                    </button>
+
+                    <button class="nc-btn-yellow">
+                        Yellow
+                    </button>
+
+                    <button class="nc-btn-grey">
+                        Grey
+                    </button>
+
+                    <button class="nc-btn-pink">
+                        Pink
+                    </button>
+
+                    <button class="nc-btn-cyan">
+                        Cyan
+                    </button>
+
+                    <button class="nc-btn-purple">
+                        Purple
+                    </button>
+
+                    <button class="nc-btn-black">
+                        Black
+                    </button>
+
+                    <button class="nc-btn-white">
+                        White
+                    </button>
+
+                </div>
+
+                <div class="codeSection">
+
+                    &lt;button class="nc-btn-red"&gt; <br>
+                    Red <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="nc-btn-green"&gt; <br>
+                    Green <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="nc-btn-blue"&gt; <br>
+                    Blue <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="nc-btn-yellow"&gt; <br>
+                    Yellow <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="nc-btn-grey"&gt; <br>
+                    Grey <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="nc-btn-pink"&gt; <br>
+                    Pink <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;`utton class="nc-btn-cyan"&gt; <br>
+                    Cyan <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="nc-btn-purple"&gt; <br>
+                    Purple <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="nc-btn-black"&gt; <br>
+                    Black <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="nc-btn-white"&gt; <br>
+                    White <br>
+                    &lt;/button&gt;
+
+
+                </div>
+
+
+
+
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Form buttons </div>
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+                <div class="showCase">
+
+                    <input type="submit" class="simple-btn-blue-hover">
+                    <input type="reset" class="simple-btn-blue-hover">
+                    <a href="#"><input type="button" class="simple-btn-blue-hover" value="Link"></a>
+
+                    <input type="submit" class="simple-btn-red-hover">
+                    <input type="reset" class="simple-btn-red-hover">
+                    <a href="#"><input type="button" class="simple-btn-red-hover" value="Link"></a>
+
+                    <input type="submit" class="simple-btn-green-hover">
+                    <input type="reset" class="simple-btn-green-hover">
+                    <a href="#"><input type="button" class="simple-btn-green-hover" value="Link"></a>
+
+                </div>
+
+
+                <div class="codeSection">
+
+
+                    &lt;input type="submit" class="simple-btn-blue-hover"&gt; <br>
+                    &lt;input type="reset" class="simple-btn-blue-hover"&gt; <br>
+                    &lt;a href="#"&gt; &lt;input type="button" class="simple-btn-blue-hover" value="Link"&gt; &lt;/a&gt;
+                    <br> <br>
+
+                    &lt;input type="submit" class="simple-btn-red-hover"&gt; <br>
+                    &lt;input type="reset" class="simple-btn-red-hover"&gt; <br>
+                    &lt;a href="#"&gt; &lt;input type="button" class="simple-btn-red-hover" value="Link"&gt; &lt;/a&gt;
+                    <br> <br>
+
+                    &lt;input type="submit" class="simple-btn-green-hover"&gt; <br>
+                    &lt;input type="reset" class="simple-btn-green-hover"&gt; <br>
+                    &lt;a href="#"&gt; &lt;input type="button" class="simple-btn-green-hover" value="Link"&gt;
+                    &lt;/a&gt;
+
+
+                </div>
+
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Buttons sizes </div>
+
+
+                <div class="topicDetails">
+                    Different sizes of a button component.
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+
+
+                <div class="showCase">
+
+                    <button class="simple-btn-blue-hover-xl"> Extra Large </button>
+                    <button class="simple-btn-blue-hover-l"> Large </button>
+                    <button class="simple-btn-blue-hover"> Medium </button>
+                    <button class="simple-btn-blue-hover-ew"> Extra Witdh </button>
+                    <button class="simple-btn-blue-hover-mw"> Medium Width </button>
+
+                </div>
+
+
+                <div class="codeSection">
+
+
+                    &lt;button class="simple-btn-blue-hover-xl"&gt; Extra Large &lt;/button&gt; <br> <br>
+                    &lt;button class="simple-btn-blue-hover-l"&gt; Large &lt;/button&gt; <br> <br>
+                    &lt;button class="simple-btn-blue-hover"&gt; Medium &lt;/button> <br> <br>
+                    &lt;button class="simple-btn-blue-hover-ew"&gt; Extra Witdh &lt;/button&gt; <br><br>
+                    &lt;button class="simple-btn-blue-hover-mw"&gt; Medium Width &lt;/button&gt;
+
+                </div>
+
+
+
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Oval button </div>
+
+                <div class="blankspace"> </div>
+
+                <div class="showCase">
+
+                    <button class="simple-btn-blue-hover-r">
+                        Blue
+                    </button>
+
+                    <button class="simple-btn-blue-hover-r">
+                        <strong> &plus; </strong>
+                    </button>
+
+                    <button class="simple-btn-blue-hover-r">
+                        <strong> &minus; </strong>
+                    </button>
+
+                    <button class="simple-btn-blue-hover-4r">
+                        Rounded corner button
+                    </button>
+
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;button class="simple-btn-blue-hover-r"&gt; <br>
+                    Blue <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-blue-hover-r"&gt; <br>
+                    &lt;strong&gt; &plus; &lt;/strong&gt; <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-blue-hover-r"&gt; <br>
+                    &lt;strong&gt; &minus; &lt;/strong&gt; <br>
+                    &lt;/button&gt; <br> <br>
+
+                    &lt;button class="simple-btn-blue-hover-4r"&gt;<br>
+                    Rounded corner button <br>
+                    &lt;/button&gt;
+
+                </div>
+
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Disabled button </div>
+
+                <div class="blankspace"> </div>
+
+                <div class="showCase">
+
+                    <input type="submit" class="simple-btn-blue-hover-dis" disabled>
+                    <input type="reset" class="simple-btn-blue-hover-dis" disabled>
+                    <button class="simple-btn-blue-hover-dis"> Button </button>
+
+                </div>
+
+
+
+                <div class="codeSection">
+
+                    &lt;input type="submit" class="simple-btn-blue-hover-dis" disabled&gt; <br><br>
+                    &lt;input type="reset" class="simple-btn-blue-hover-dis" disabled&gt; <br><br>
+                    &lt;button class="simple-btn-blue-hover-dis"&gt; Button &lt;/button&gt;
+
+
+                </div>
+
+
+
+
+
+            </div>
+            <!-- -----------------button------------------------- -->
+
+
+
+
+
+            <!-- -----------------cards------------------------- -->
+
+
+
+
+
+            <div class="blankspace"> </div>
+
+            <div id="CARDS_JASS">
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Cards </div>
+
+                <div class="topicDetails">
+                    Cards provide a flexible and extensible content container with multiple variants and options.
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+
+                <div class="showCase">
+
+                    <img src="smpimg3.jpg" class="card-img">
+
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;img src="smpimg3.jpg" class="card-img"&gt;
+
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+
+                    <img src="smpimg3.jpg" class="card-imgNI">
+                    <div class="card-img-det">
+                        <h3>Interstellar</h3>
+                        Interstellar travel refers to the currently theoretical idea of interstellar probes or crewed
+                        spacecraft moving between stars or planetary systems in a galaxy. ... Moreover, collisions by
+                        the spacecraft with cosmic dust and gas can be very dangerous for both passengers and the
+                        spacecraft itself.
+                    </div>
+
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;img src="smpimg3.jpg" class="card-imgNI"&gt; <br>
+                    &lt;div class="card-img-det"&gt; <br>
+                    &lt;h3&gt;Interstellar&lt;/h3&gt; <br>
+                    Interstellar travel refers to the currently theoretical idea of interstellar probes or crewed
+                    spacecraft moving between stars or planetary systems in a galaxy. ... Moreover, collisions by the
+                    spacecraft with cosmic dust and gas can be very dangerous for both passengers and the spacecraft
+                    itself. <br>
+                    &lt;/div&gt;
+
+                </div>
+
+
+                <div class="blankspace"> </div>
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+
+                <div class="showCase">
+
+                    <div class="card-img-det">
+                        <h3>Interstellar</h3>
+                        Interstellar travel refers to the currently theoretical idea of interstellar probes or crewed
+                        spacecraft moving between stars or planetary systems in a galaxy. ... Moreover, collisions by
+                        the spacecraft with cosmic dust and gas can be very dangerous for both passengers and the
+                        spacecraft itself.
+                    </div>
+
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;div class="card-img-det"&gt; <br>
+                    &lt;h3&gt;Interstellar&lt;/h3&gt; <br>
+                    Interstellar travel refers to the currently theoretical idea of interstellar probes or crewed
+                    spacecraft moving between stars or planetary systems in a galaxy. ... Moreover, collisions by the
+                    spacecraft with cosmic dust and gas can be very dangerous for both passengers and the spacecraft
+                    itself. <br>
+                    &lt;/div&gt;
+
+                </div>
+
+
+
+                <div class="blankspace"> </div>
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+
+                <div class="showCase">
+
+                    <div class="lscape-card">
+                        <img src="smpimg3.jpg" class="lscape-img">
+                        <p class="lscape-det">
+                            Interstellar travel refers to the currently theoretical idea of interstellar probes or
+                            crewed spacecraft moving between stars or planetary systems in a galaxy. ... Moreover,
+                            collisions by the spacecraft with cosmic dust and gas can be very dangerous for both
+                            passengers and the spacecraft itself.
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="codeSection">
+
+                    &lt;div class="lscape-card"&gt; <br>
+                    &lt;img src="smpimg3.jpg" class="lscape-img"&gt; <br>
+                    &lt;p class="lscape-det"&gt; <br>
+                    Interstellar travel refers to the currently theoretical idea of interstellar probes or
+                    crewed spacecraft moving between stars or planetary systems in a galaxy. ... Moreover,
+                    collisions by the spacecraft with cosmic dust and gas can be very dangerous for both
+                    passengers and the spacecraft itself.
+                    &lt;/p&gt; <br>
+                    &lt;/div&gt;
+
+                </div>
+
+
+
+                <div class="blankspace"> </div>
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+
+                <div class="showCase">
+
+                    <div class="card-detonimg">
+                        <h3> Helix Nebula </h3>
+                        <p>
+                            The Helix Nebula (also known as NGC 7293 or Caldwell 63) is a planetary nebula (PN) located
+                            in the constellation Aquarius. Discovered by Karl Ludwig Harding, probably before 1824, this
+                            object is one of the closest to the Earth of all the bright planetary nebulae.[4] The
+                            distance, measured by the Gaia mission, is 655±13 light-years.[5] It is similar in
+                            appearance to the Cat's Eye Nebula and the Ring Nebula, whose size, age, and physical
+                            characteristics are similar to the Dumbbell Nebula, varying only in its relative proximity
+                            and the appearance from the equatorial viewing angle.[6] The Helix Nebula has sometimes been
+                            referred to as the "Eye of God" in pop culture,[7] as well as the "Eye of Sauron".
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;div class="card-detonimg"&gt; <br>
+                    &lt;h3&gt; Helix Nebula &lt;/h3&gt; <br>
+                    &lt;p&gt; <br>
+                    The Helix Nebula (also known as NGC 7293 or Caldwell 63) is a planetary nebula (PN) located
+                    in the constellation Aquarius. Discovered by Karl Ludwig Harding, probably before 1824, this
+                    object is one of the closest to the Earth of all the bright planetary nebulae.[4] The
+                    distance, measured by the Gaia mission, is 655±13 light-years.[5] It is similar in
+                    appearance to the Cat's Eye Nebula and the Ring Nebula, whose size, age, and physical
+                    characteristics are similar to the Dumbbell Nebula, varying only in its relative proximity
+                    and the appearance from the equatorial viewing angle.[6] The Helix Nebula has sometimes been
+                    referred to as the "Eye of God" in pop culture,[7] as well as the "Eye of Sauron". <br>
+                    &lt;/p&gt; <br>
+                    &lt;/div&gt;
+
+                </div>
+
+
+
+
+                <div class="blankspace"> </div>
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+                <div class="showCase">
+
+                    <div class="card-w-img">
+                        <img src="github1.png" class="card-w-img-src">
+                        <h2> Github </h2>
+                        <p class="card-w-img-det"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorem
+                            voluptatem corrupti, velit et voluptatibus quo consectetur a, deserunt doloremque excepturi
+                            minima qui quos quas exercitationem animi ea dicta odit? </p>
+                        <h5>Your Github</h5>
+                    </div>
+
+                </div>
+
+
+                <div class="codeSection">
+
+
+                    &lt;div class="card-w-img"&gt; <br>
+                    &lt;img src="github1.png" class="card-w-img-src"&gt; <br>
+                    &lt;&lt;h2&gt; Github &lt;/h2&gt; <br>
+                    &lt;p class="card-w-img-det"&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorem
+                    voluptatem corrupti, velit et voluptatibus quo consectetur a, deserunt doloremque excepturi minima
+                    qui quos quas exercitationem animi ea dicta odit? &lt;/p&gt; <br>
+                    &lt;h5&gt;Your Github&lt;/h5&gt;
+                </div>
+
+
+
+
+                <div class="blankspace"> </div>
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+
+                <div class="showCase">
+                    <div class="flexboxROW">
+
+                        <div class="card-item-box">
+                            <h3> Product Name </h3>
+                            <img src="Playstation.png" class="card-item-box-img">
+                            <h5>Price : &dollar;700 </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos earum mollitia laborum
+                                quis veniam at a facilis corporis assumenda ratione aspernatur laudantium hic nemo sunt,
+                                saepe nobis ducimus, quos ea?
+                            </p>
+                            <div class="flexboxROW">
+                                <input type="image" src="bs.png" class="stars-for-rating  card1-star1">
+                                <input type="image" src="bs.png" class="stars-for-rating  card1-star2">
+                                <input type="image" src="bs.png" class="stars-for-rating  card1-star3">
+                                <input type="image" src="bs.png" class="stars-for-rating  card1-star4">
+                                <input type="image" src="bs.png" class="stars-for-rating  card1-star5">
+                            </div>
+                            <button class="simple-btn-purple-hover">
+                                Buy
+                            </button>
+                            <button class="simple-btn-pink-hover">
+                                Add to Cart
+                            </button>
+                        </div>
+
+
+                        <div class="card-item-box2">
+                            <h3> Product Name </h3>
+                            <img src="Playstation.png" class="card-item-box-img2">
+                            <h5>Price : &dollar;700 </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos earum mollitia laborum
+                                quis veniam at a facilis corporis assumenda ratione aspernatur laudantium hic nemo sunt,
+                                saepe nobis ducimus, quos ea?
+                            </p>
+                            <div class="flexboxROW">
+                                <input type="image" src="bs.png" class="stars-for-rating  card1-star1w">
+                                <input type="image" src="bs.png" class="stars-for-rating  card1-star2w">
+                                <input type="image" src="bs.png" class="stars-for-rating  card1-star3w">
+                                <input type="image" src="bs.png" class="stars-for-rating  card1-star4w">
+                                <input type="image" src="bs.png" class="stars-for-rating  card1-star5w">
+                            </div>
+                            <button class="simple-btn-purple-hover">
+                                Buy
+                            </button>
+                            <button class="simple-btn-pink-hover">
+                                Add to Cart
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="codeSection">
+
+                    &lt;div class="card-item-box"&gt; <br>
+                    &lt;h3&gt; Product Name &lt;/h3&gt; <br>
+                    &lt;img src="Playstation.png" class="card-item-box-img"&gt; <br>
+                    &lt;h5&gt;Price : &dollar;700 &lt;/h5&gt; <br>
+                    &lt;p&gt; <br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos earum mollitia laborum
+                    quis veniam at a facilis corporis assumenda ratione aspernatur laudantium hic nemo sunt,
+                    saepe nobis ducimus, quos ea?
+                    &lt;/p&gt; <br>
+                    &lt;div class="flexboxROW"&gt; <br>
+                    &lt;input type="image" src="bs.png" class="stars-for-rating card1-star1"&gt; <br>
+                    &lt;input type="image" src="bs.png" class="stars-for-rating card1-star2"&gt; <br>
+                    &lt;input type="image" src="bs.png" class="stars-for-rating card1-star3"&gt; <br>
+                    &lt;input type="image" src="bs.png" class="stars-for-rating card1-star4"&gt; <br>
+                    &lt;input type="image" src="bs.png" class="stars-for-rating card1-star5"&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;button class="simple-btn-purple-hover"&gt; <br>
+                    Buy <br>
+                    &lt;/button&gt; <br>
+                    &lt;button class="simple-btn-pink-hover"&gt; <br>
+                    Add to Cart <br>
+                    &lt;/button&gt; <br>
+                    &lt;/div&gt; <br>
+                    <br> <br>
+
+                    &lt;div class="card-item-box2"&gt; <br>
+                    &lt;h3&gt; Product Name &lt;/h3&gt; <br>
+                    &lt;img src="Playstation.png" class="card-item-box-img2"&gt; <br>
+                    &lt;h5&gt;Price : &dollar;700 &lt;/h5&gt; <br>
+                    &lt;p&gt; <br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos earum mollitia laborum
+                    quis veniam at a facilis corporis assumenda ratione aspernatur laudantium hic nemo sunt,
+                    saepe nobis ducimus, quos ea? <br>
+                    &lt;/p&gt; <br>
+                    &lt;div class="flexboxROW"&gt; <br>
+                    &lt;input type="image" src="bs.png" class="stars-for-rating card1-star1w"&gt; <br>
+                    &lt;input type="image" src="bs.png" class="stars-for-rating card1-star2w"&gt; <br>
+                    &lt;input type="image" src="bs.png" class="stars-for-rating card1-star3w"&gt; <br>
+                    &lt;input type="image" src="bs.png" class="stars-for-rating card1-star4w"&gt; <br>
+                    &lt;input type="image" src="bs.png" class="stars-for-rating card1-star5w"&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;button class="simple-btn-purple-hover"&gt; <br>
+                    Buy <br>
+                    &lt;/button&gt; <br>
+                    &lt;button class="simple-btn-pink-hover"&gt; <br>
+                    Add to Cart <br>
+                    &lt;/button&gt; <br>
+                    &lt;/div&gt; <br>
+
+
+                </div>
+
+
+
+
+                <div class="blankspace"> </div>
+
+                <div class="blankspace"> </div>
+
+
+
+
+                <div class="showCase">
+                    <div class="flexboxROW">
+
+                        <div class="card-portf-b">
+                            <img src="html5.png" class="card-portf-b-img">
+                            <h2> HTML </h2>
+                            <h3> Markup Language </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloribus velit illo,
+                                ea consequuntur incidunt recusandae ex veritatis aliquid nemo, corrupti dolorum.
+                                Explicabo esse iure totam! Vero delectus voluptatem ex.
+                            </p>
+                            <div class="flexboxROW">
+                                <a href="#"><img src="ninstagram.png" title="Instagram" class="card-portf-b-link"></a>
+                                <a href="#"><img src="nlinkedin.png" title="Linkedin" class="card-portf-b-link"></a>
+                                <a href="#"><img src="nfacebook.png" title="Facebook" class="card-portf-b-link"></a>
+                            </div>
+                        </div>
+
+
+                        <div class="card-portf-w">
+                            <img src="javascript.png" class="card-portf-w-img">
+                            <h2> JavaScript </h2>
+                            <h3> Scripting Language </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloribus velit illo,
+                                ea consequuntur incidunt recusandae ex veritatis aliquid nemo, corrupti dolorum.
+                                Explicabo esse iure totam! Vero delectus voluptatem ex.
+                            </p>
+                            <div class="flexboxROW">
+                                <a href="#"><img src="ninstagram.png" title="Instagram" class="card-portf-w-link"></a>
+                                <a href="#"><img src="nlinkedin.png" title="Linkedin" class="card-portf-w-link"></a>
+                                <a href="#"><img src="nfacebook.png" title="Facebook" class="card-portf-w-link"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="codeSection">
+
+                    &lt;div class="card-portf-b"&gt; <br>
+                    &lt;img src="html5.png" class="card-portf-b-img"&gt; <br>
+                    &lt;h2&gt; HTML &lt;/h2&gt; <br>
+                    &lt;h3&gt; Markup Language &lt;/h3&gt; <br>
+                    &lt;p&gt; <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloribus velit illo,
+                    ea consequuntur incidunt recusandae ex veritatis aliquid nemo, corrupti dolorum.
+                    Explicabo esse iure totam! Vero delectus voluptatem ex. <br>
+                    &lt;/p&gt; <br>
+                    &lt;div class="flexboxROW"&gt; <br>
+                    &lt;a href="#"&gt;&lt;img src="ninstagram.png" title="Instagram"
+                    class="card-portf-b-link"&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt;&lt;img src="nlinkedin.png" title="Linkedin"
+                    class="card-portf-b-link"&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt;&lt;img src="nfacebook.png" title="Facebook"
+                    class="card-portf-b-link"&gt;&lt;/a&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+
+                    &lt;div class="card-portf-w"&gt; <br>
+                    &lt;img src="javascript.png" class="card-portf-w-img"&gt; <br>
+                    &lt;h2&gt; JavaScript &lt;/h2&gt; <br>
+                    &lt;h3&gt; Scripting Language &lt;/h3&gt; <br>
+                    &lt;p&gt; <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloribus velit illo,
+                    ea consequuntur incidunt recusandae ex veritatis aliquid nemo, corrupti dolorum.
+                    Explicabo esse iure totam! Vero delectus voluptatem ex. <br>
+                    &lt;/p&gt; <br>
+                    &lt;div class="flexboxROW"&gt; <br>
+                    &lt;a href="#"&gt;&lt;img src="ninstagram.png" title="Instagram"
+                    class="card-portf-w-link"&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt;&lt;img src="nlinkedin.png" title="Linkedin"
+                    class="card-portf-w-link"&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt;&lt;img src="nfacebook.png" title="Facebook"
+                    class="card-portf-w-link"&gt;&lt;/a&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;/div&gt;
+
+                </div>
+
+
+                <div class="blankspace"> </div>
+
+                <div class="blankspace"> </div>
+
+
+            </div>
+
+
+            <!-- -----------------cards------------------------- -->
+
+
+
+            <!-- -----------------dropdown------------------------- -->
+
+            <div id="DROPDOWN_JASS">
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Dropdowns </div>
+
+                <div class="topicDetails">
+                    Dropdowns are toggleable, contextual overlays for displaying lists of links and more.
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+
+                <div class="showCase">
+
+                    <div class="flexboxCOLUMN">
+
+                        <input type="image" src="down.png" class="ddown-t1">
+                        <input type="image" src="down.png" class="ddown-t1-2">
+                        <div class="ddown-t1-menu">
+                            <ul>
+                                <a href="#">
+                                    <li>Item 1</li>
+                                </a>
+                                <a href="#">
+                                    <li>Item 2</li>
+                                </a>
+                                <a href="#">
+                                    <li>Item 3</li>
+                                </a>
+                            </ul>
+                        </div>
+
+
+                        <input type="image" src="up.png" class="ddown-t1-up">
+                        <input type="image" src="up.png" class="ddown-t1-2-up">
+                        <div class="ddown-t1-menu-up">
+                            <ul>
+                                <a href="#">
+                                    <li>Item 1</li>
+                                </a>
+                                <a href="#">
+                                    <li>Item 2</li>
+                                </a>
+                                <a href="#">
+                                    <li>Item 3</li>
+                                </a>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="codeSection">
+
+                    &lt;input type="image" src="down.png" class="ddown-t1"&gt; <br>
+                    &lt;input type="image" src="down.png" class="ddown-t1-2"&gt; <br>
+                    &lt;div class="ddown-t1-menu"&gt; <br>
+                    &lt;ul&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt;Item 1&lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt;Item 2&lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt;Item 3&lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;/ul&gt; <br>
+                    &lt;/div&gt;
+                    <br> <br>
+
+                    &lt;input type="image" src="up.png" class="ddown-t1-up"&gt; <br>
+                    &lt;input type="image" src="up.png" class="ddown-t1-2-up"&gt; <br>
+                    &lt;div class="ddown-t1-menu-up"&gt; <br>
+                    &lt;ul&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt;Item 1&lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt;Item 2&lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt;Item 3&lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;/ul&gt; <br>
+                    &lt;/div&gt; <br>
+
+                </div>
+
+
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Colored dropdowns </div>
+
+                <div class="topicDetails">
+                    Click once to open dropdown menu and click twice to close the dropdown menu.
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+                    <button class="simple-btn-red-hover  ddrhb">
+                        <strong>&#8227;</strong>
+                    </button>
+
+                    <div class="ddown-t2-menu-red">
+                        <ul>
+                            <a href="#">
+                                <li> Home </li>
+                            </a>
+                            <a href="#">
+                                <li> Account </li>
+                            </a>
+                            <a href="#">
+                                <li> About us </li>
+                            </a>
+                            <a href="#">
+                                <li> Contact us </li>
+                            </a>
+                        </ul>
+                    </div>
+
+
+
+                    <button class="simple-btn-green-hover  ddghb">
+                        <strong>&#8227;</strong>
+                    </button>
+
+                    <div class="ddown-t2-menu-green">
+                        <ul>
+                            <a href="#">
+                                <li> Home </li>
+                            </a>
+                            <a href="#">
+                                <li> Account </li>
+                            </a>
+                            <a href="#">
+                                <li> About us </li>
+                            </a>
+                            <a href="#">
+                                <li> Contact us </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <button class="simple-btn-blue-hover  ddbhb">
+                        <strong>&#8227;</strong>
+                    </button>
+
+                    <div class="ddown-t2-menu-blue">
+                        <ul>
+                            <a href="#">
+                                <li> Home </li>
+                            </a>
+                            <a href="#">
+                                <li> Account </li>
+                            </a>
+                            <a href="#">
+                                <li> About us </li>
+                            </a>
+                            <a href="#">
+                                <li> Contact us </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <button class="simple-btn-pink-hover  ddphb">
+                        <strong>&#8227;</strong>
+                    </button>
+
+                    <div class="ddown-t2-menu-pink">
+                        <ul>
+                            <a href="#">
+                                <li> Home </li>
+                            </a>
+                            <a href="#">
+                                <li> Account </li>
+                            </a>
+                            <a href="#">
+                                <li> About us </li>
+                            </a>
+                            <a href="#">
+                                <li> Contact us </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <button class="simple-btn-cyan-hover  ddchb">
+                        <strong>&#8227;</strong>
+                    </button>
+
+                    <div class="ddown-t2-menu-cyan">
+                        <ul>
+                            <a href="#">
+                                <li> Home </li>
+                            </a>
+                            <a href="#">
+                                <li> Account </li>
+                            </a>
+                            <a href="#">
+                                <li> About us </li>
+                            </a>
+                            <a href="#">
+                                <li> Contact us </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <button class="simple-btn-purple-hover  ddpuhb">
+                        <strong>&#8227;</strong>
+                    </button>
+
+                    <div class="ddown-t2-menu-purple">
+                        <ul>
+                            <a href="#">
+                                <li> Home </li>
+                            </a>
+                            <a href="#">
+                                <li> Account </li>
+                            </a>
+                            <a href="#">
+                                <li> About us </li>
+                            </a>
+                            <a href="#">
+                                <li> Contact us </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="codeSection">
+
+                    &lt;button class="simple-btn-red-hover ddrhb"&gt; <br>
+                    &lt;strong&gt;&#8227;&lt;/strong&gt; <br>
+                    &lt;/button&gt; <br>
+                    &lt;div class="ddown-t2-menu-red"&gt; <br>
+                    &lt;ul&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Home &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Account &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li> About us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Contact us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;/ul&gt; <br>
+                    &lt;/div&gt; <br>
+                    <br><br><br>
+
+
+                    &lt;button class="simple-btn-green-hover ddghb"&gt; <br>
+                    &lt;strong&gt;&#8227;&lt;/strong&gt; <br>
+                    &lt;/button&gt; <br>
+
+                    &lt;div class="ddown-t2-menu-green"&gt; <br>
+                    &lt;ul&gt;
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Home &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Account &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; About us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;l&gt;&gt; Contact us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;/ul&gt; <br>
+                    &lt;/div&gt; <br>
+
+                    <br><br><br>
+
+                    &lt;button class="simple-btn-blue-hover ddbhb"&gt; <br>
+                    &lt;strong>&#8227;&lt;/strong&gt; <br>
+                    &lt;/button&gt; <br>
+
+                    &lt;div class="ddown-t2-menu-blue"&gt; <br>
+                    &lt;ul&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Home &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Account &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"> <br>
+                    &lt;li&gt; About us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"> <br>
+                    &lt;li&gt; Contact us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;/ul&gt; <br>
+                    &lt;/div&gt; <br>
+
+                    <br><br><br>
+
+                    &lt;button class="simple-btn-pink-hover ddphb"&gt; <br>
+                    &lt;strong&gt;&#8227;&lt;/strong&gt; <br>
+                    &lt;/button&gt; <br>
+
+                    &lt;div class="ddown-t2-menu-pink"&gt; <br>
+                    &lt;ul&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Home &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Account &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; About us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Contact us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;/ul&gt; <br>
+                    &lt;/div&gt;
+
+                    <br><br><br>
+
+                    &lt;button class="simple-btn-cyan-hover ddchb"&gt; <br>
+                    &lt;strong&gt;&#8227;&lt;/strong&gt; <br>
+                    &lt;/button&gt; <br>
+
+                    &lt;div class="ddown-t2-menu-cyan"&gt; <br>
+                    &lt;ul> <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Home &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Account &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; About us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Contact us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;/ul&gt; <br>
+                    &lt;/div&gt; <br>
+
+                    <br><br><br>
+
+                    &lt;button class="simple-btn-purple-hover ddpuhb"&gt; <br>
+                    &lt;strong>&#8227;&lt;/strong&gt; <br>
+                    &lt;/button&gt; <br>
+
+                    &lt;div class="ddown-t2-menu-purple"&gt; <br>
+                    &lt;ul&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Home &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Account &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;&lt;li&gt; About us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Contact us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;/ul&gt; <br>
+                    &lt;/div&gt; <br>
+
+                </div>
+
+
+                <div class="blankspace"> </div>
+                <div class="blankspace"> </div>
+
+
+
+
+
+                <div class="showCase">
+                    <button class="simple-btn-red-hover  ddrhb">
+                        <strong> Menu </strong>
+                    </button>
+
+                    <div class="ddown-t2-menu-red">
+                        <ul>
+                            <a href="#">
+                                <li> Home </li>
+                            </a>
+                            <a href="#">
+                                <li> Account </li>
+                            </a>
+                            <a href="#">
+                                <li> About us </li>
+                            </a>
+                            <a href="#">
+                                <li> Contact us </li>
+                            </a>
+                        </ul>
+                    </div>
+
+
+
+                    <button class="simple-btn-green-hover  ddghb">
+                        <strong>Menu</strong>
+                    </button>
+
+                    <div class="ddown-t2-menu-green">
+                        <ul>
+                            <a href="#">
+                                <li> Home </li>
+                            </a>
+                            <a href="#">
+                                <li> Account </li>
+                            </a>
+                            <a href="#">
+                                <li> About us </li>
+                            </a>
+                            <a href="#">
+                                <li> Contact us </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <button class="simple-btn-blue-hover  ddbhb">
+                        <strong>Menu</strong>
+                    </button>
+
+                    <div class="ddown-t2-menu-blue">
+                        <ul>
+                            <a href="#">
+                                <li> Home </li>
+                            </a>
+                            <a href="#">
+                                <li> Account </li>
+                            </a>
+                            <a href="#">
+                                <li> About us </li>
+                            </a>
+                            <a href="#">
+                                <li> Contact us </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <button class="simple-btn-pink-hover  ddphb">
+                        <strong>Menu</strong>
+                    </button>
+
+                    <div class="ddown-t2-menu-pink">
+                        <ul>
+                            <a href="#">
+                                <li> Home </li>
+                            </a>
+                            <a href="#">
+                                <li> Account </li>
+                            </a>
+                            <a href="#">
+                                <li> About us </li>
+                            </a>
+                            <a href="#">
+                                <li> Contact us </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <button class="simple-btn-cyan-hover  ddchb">
+                        <strong>Menu</strong>
+                    </button>
+
+                    <div class="ddown-t2-menu-cyan">
+                        <ul>
+                            <a href="#">
+                                <li> Home </li>
+                            </a>
+                            <a href="#">
+                                <li> Account </li>
+                            </a>
+                            <a href="#">
+                                <li> About us </li>
+                            </a>
+                            <a href="#">
+                                <li> Contact us </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <button class="simple-btn-purple-hover  ddpuhb">
+                        <strong>Menu</strong>
+                    </button>
+
+                    <div class="ddown-t2-menu-purple">
+                        <ul>
+                            <a href="#">
+                                <li> Home </li>
+                            </a>
+                            <a href="#">
+                                <li> Account </li>
+                            </a>
+                            <a href="#">
+                                <li> About us </li>
+                            </a>
+                            <a href="#">
+                                <li> Contact us </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="codeSection">
+
+                    &lt;button class="simple-btn-red-hover ddrhb"&gt; <br>
+                    &lt;strong&gt;Menu&lt;/strong&gt; <br>
+                    &lt;/button&gt; <br>
+                    &lt;div class="ddown-t2-menu-red"&gt; <br>
+                    &lt;ul&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Home &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Account &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li> About us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Contact us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;/ul&gt; <br>
+                    &lt;/div&gt; <br>
+                    <br><br><br>
+
+
+                    &lt;button class="simple-btn-green-hover ddghb"&gt; <br>
+                    &lt;strong&gt;Menu&lt;/strong&gt; <br>
+                    &lt;/button&gt; <br>
+
+                    &lt;div class="ddown-t2-menu-green"&gt; <br>
+                    &lt;ul&gt;
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Home &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Account &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; About us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;l&gt;&gt; Contact us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;/ul&gt; <br>
+                    &lt;/div&gt; <br>
+
+                    <br><br><br>
+
+                    &lt;button class="simple-btn-blue-hover ddbhb"&gt; <br>
+                    &lt;strong&gt;Menu&lt;/strong&gt; <br>
+                    &lt;/button&gt; <br>
+
+                    &lt;div class="ddown-t2-menu-blue"&gt; <br>
+                    &lt;ul&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Home &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Account &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"> <br>
+                    &lt;li&gt; About us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"> <br>
+                    &lt;li&gt; Contact us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;/ul&gt; <br>
+                    &lt;/div&gt; <br>
+
+                    <br><br><br>
+
+                    &lt;button class="simple-btn-pink-hover ddphb"&gt; <br>
+                    &lt;strong&gt;Menu&lt;/strong&gt; <br>
+                    &lt;/button&gt; <br>
+
+                    &lt;div class="ddown-t2-menu-pink"&gt; <br>
+                    &lt;ul&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Home &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Account &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; About us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Contact us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;/ul&gt; <br>
+                    &lt;/div&gt;
+
+                    <br><br><br>
+
+                    &lt;button class="simple-btn-cyan-hover ddchb"&gt; <br>
+                    &lt;strong&gt;Menu&lt;/strong&gt; <br>
+                    &lt;/button&gt; <br>
+
+                    &lt;div class="ddown-t2-menu-cyan"&gt; <br>
+                    &lt;ul> <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Home &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Account &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; About us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Contact us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;/ul&gt; <br>
+                    &lt;/div&gt; <br>
+
+                    <br><br><br>
+
+                    &lt;button class="simple-btn-purple-hover ddpuhb"&gt; <br>
+                    &lt;strong&gt;Menu&lt;/strong&gt; <br>
+                    &lt;/button&gt; <br>
+
+                    &lt;div class="ddown-t2-menu-purple"&gt; <br>
+                    &lt;ul&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Home &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Account &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;&lt;li&gt; About us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Contact us &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;/ul&gt; <br>
+                    &lt;/div&gt; <br>
+
+                </div>
+
+
+                <div class="blankspace"> </div>
+
+
+
+
+            </div>
+            <!-- -----------------dropdown------------------------- -->
+
+
+
+
+            <!-- -----------------listgroup------------------------- -->
+            <div class="blankspace"> </div>
+
+            <div id="LISTGROUP_JASS">
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> List Group </div>
+
+                <div class="topicDetails">
+                    List groups are a flexible and powerful component for displaying a series of content.
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+                    <div class="flexboxCOLUMN">
+                        <div class="glist-t1-rounded-red"> Group List 1 </div>
+                        <div class="glist-t1-rounded-green">Group List 2</div>
+                        <div class="glist-t1-rounded-blue">Group List 3</div>
+                        <div class="glist-t1-rounded-yellow">Group List 4</div>
+                        <div class="glist-t1-rounded-cyan">Group List 5</div>
+                    </div>
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;div class="glist-t1-rounded-red"&gt; Group List 1 &lt;/div&gt; <br>
+                    &lt;div class="glist-t1-rounded-green"&gt;Group List 2&lt;/div&gt; <br>
+                    &lt;div class="glist-t1-rounded-blue"&gt;Group List 3&lt;/div&gt; <br>
+                    &lt;div class="glist-t1-rounded-yellow"&gt;Group List 4&lt;/div&gt; <br>
+                    &lt;div class="glist-t1-rounded-cyan"&gt;Group List 5&lt;/div&gt;
+
+
+                </div>
+
+
+
+
+                <div class="blankspace"> </div>
+
+
+
+                <div class="showCase">
+                    <div class="flexboxCOLUMN">
+                        <div class="glist-t1-rounded-f"> Group List 1 </div>
+                        <div class="glist-t1-rounded">Group List 2</div>
+                        <div class="glist-t1-rounded">Group List 3</div>
+                        <div class="glist-t1-rounded">Group List 4</div>
+                        <div class="glist-t1-rounded">Group List 5</div>
+                    </div>
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;div class="glist-t1-rounded-f"&gt; Group List 1 &lt;/div&gt; <br>
+                    &lt;div class="glist-t1-rounded"&gt;Group List 2&lt;/div&gt; <br>
+                    &lt;div class="glist-t1-rounded"&gt;Group List 3&lt;/div&gt; <br>
+                    &lt;div class="glist-t1-rounded"&gt;Group List 4&lt;/div&gt; <br>
+                    &lt;div class="glist-t1-rounded"&gt;Group List 5&lt;/div&gt;
+
+
+                </div>
+
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> List Group with input field </div>
+
+                <div class="blankspace"> </div>
+
+
+
+                <div class="showCase">
+                    <div class="flexboxCOLUMN">
+                        <input type="text" class="glist-t1-rounded-f" placeholder="Group List 1">
+                        <input type="text" class="glist-t1-rounded" placeholder="Group List 2">
+                        <input type="text" class="glist-t1-rounded" placeholder="Group List 3">
+                        <input type="text" class="glist-t1-rounded" placeholder="Group List 4">
+                        <input type="text" class="glist-t1-rounded" placeholder="Group List 5">
+                    </div>
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;input type="text" class="glist-t1-rounded-f" placeholder="Group List 1"&gt; <br>
+                    &lt;input type="text" class="glist-t1-rounded" placeholder="Group List 2"&gt; <br>
+                    &lt;input type="text" class="glist-t1-rounded" placeholder="Group List 3"&gt; <br>
+                    &lt;input type="text" class="glist-t1-rounded" placeholder="Group List 4"&gt; <br>
+                    &lt;input type="text" class="glist-t1-rounded" placeholder="Group List 5"&gt;
+
+                </div>
+
+
+
+
+            </div>
+
+            <!-- -----------------listgroup------------------------- -->
+
+
+
+            <!-- -----------------Modal------------------------- -->
+
+
+            <div class="blankspace"> </div>
+
+            <div id="MODAL_JASS">
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Modal </div>
+
+                <div class="topicDetails">
+                    Modal is a type of dialog box which might be user notification ,confirmation box or custom content
+                    box.
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+                    <div class="flexboxCOLUMN">
+
+                        <div class="modal-t1">
+                            <div class="modal-t1-f">
+                                <span> Confirmation </span>
+                                <span class="modal-t1-close"> × </span>
+                            </div>
+                            <hr class="hrMoadal">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia officiis beatae
+                                cumque! Nihil ut voluptates dolorum, officia eos id accusamus necessitatibus soluta
+                                asperiores minima reiciendis, aliquam, culpa atque dignissimos.
+                            </p>
+                            <hr class="hrMoadal">
+                            <div class="modal-t1-btns">
+                                <button class="simple-btn-grey-hover">
+                                    Yes
+                                </button>
+                                <button class="simple-btn-black-hover">
+                                    No
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="modal-t1-b">
+                            <div class="modal-t1-f-b">
+                                <span> Confirmation </span>
+                                <span class="modal-t1-close-b"> × </span>
+                            </div>
+                            <hr class="hrMoadal-b">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia officiis beatae
+                                cumque! Nihil ut voluptates dolorum, officia eos id accusamus necessitatibus soluta
+                                asperiores minima reiciendis, aliquam, culpa atque dignissimos.
+                            </p>
+                            <hr class="hrMoadal-b">
+                            <button class="simple-btn-grey-hover">
+                                Yes
+                            </button>
+                            <button class="simple-btn-white-hover">
+                                No
+                            </button>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;div class="modal-t1"&gt;<br>
+                    &lt;div class="modal-t1-f"&gt;<br>
+                    &lt;span&gt; Confirmation &lt;/span&gt;<br>
+                    &lt;span class="modal-t1-close"&gt; × &lt;/span&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;hr class="hrMoadal"&gt;<br>
+                    &lt;p&gt;<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia officiis beatae
+                    cumque! Nihil ut voluptates dolorum, officia eos id accusamus necessitatibus soluta
+                    asperiores minima reiciendis, aliquam, culpa atque dignissimos.
+                    &lt;/p&gt;<br>
+                    &lt;hr class="hrMoadal"&gt;<br>
+                    &lt;div class="modal-t1-btns"&gt;<br>
+                    &lt;button class="simple-btn-grey-hover"&gt;<br>
+                    Yes<br>
+                    &lt;/button&gt;<br>
+                    &lt;button class="simple-btn-black-hover"&gt;<br>
+                    No<br>
+                    &lt;/button&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/div&gt;
+                    <br><br><br>
+                    &lt;div class="modal-t1-b"&gt;<br>
+                    &lt;div class="modal-t1-f-b"&gt;<br>
+                    &lt;span&gt; Confirmation &lt;/span&gt;<br>
+                    &lt;span class="modal-t1-close-b"&gt; × &lt;/span&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;hr class="hrMoadal-b"&gt;<br>
+                    &lt;p&gt;<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia officiis beatae
+                    cumque! Nihil ut voluptates dolorum, officia eos id accusamus necessitatibus soluta
+                    asperiores minima reiciendis, aliquam, culpa atque dignissimos.
+                    &lt;/p&gt;<br>
+                    &lt;hr class="hrMoadal-b"&gt;<br>
+                    &lt;button class="simple-btn-grey-hover"&gt;<br>
+                    Yes<br>
+                    &lt;/button&gt;<br>
+                    &lt;button class="simple-btn-white-hover"&gt;<br>
+                    No<br>
+                    &lt;/button&gt;<br>
+                    &lt;/div&gt;
+
+
+                </div>
+
+
+
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+
+                    <button class="simple-btn-blue-hover   modal-t1open">
+                        You wanna really visit this site?
+                    </button>
+
+<script>
+    $(document).ready(function(){
+        $('.modal-t1-close2').click(function(){
+    $('#conFIRM1').hide();
+            });
+    });
+                    </script>
+
+                    <div class="modal-t1  modal-t1-h" id="conFIRM1">
+                        <div class="modal-t1-f">
+                            <span> Confirmation </span>
+                            <span class="modal-t1-close2"> × </span>
+                        </div>
+                        <hr class="hrMoadal">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia officiis beatae
+                            cumque! Nihil ut voluptates dolorum, officia eos id accusamus necessitatibus soluta
+                            asperiores minima reiciendis, aliquam, culpa atque dignissimos.
+                        </p>
+                        <hr class="hrMoadal">
+                        <div class="modal-t1-btns">
+                            <button class="simple-btn-grey-hover">
+                                Yes
+                            </button>
+                            <button class="simple-btn-black-hover">
+                                No
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;button class="simple-btn-blue-hover modal-t1open"&gt;
+                    You wanna really visit this site?
+                    &lt;/button&gt;
+
+
+
+                    &lt;div class="modal-t1 modal-t1-h"&gt; <br>
+                    &lt;div class="modal-t1-f"&gt; <br>
+                    &lt;span&gt; Confirmation &lt;/span&gt; <br>
+                    &lt;span class="modal-t1-close2"&gt; × &lt;/span&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;hr class="hrMoadal"&gt; <br>
+                    &lt;p&gt; <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia officiis beatae
+                    cumque! Nihil ut voluptates dolorum, officia eos id accusamus necessitatibus soluta
+                    asperiores minima reiciendis, aliquam, culpa atque dignissimos.
+                    &lt;/p&gt; <br>
+                    &lt;hr class="hrMoadal"&gt; <br>
+                    &lt;div class="modal-t1-btns"&gt; <br>
+                    &lt;button class="simple-btn-grey-hover"&gt; <br>
+                    Yes <br>
+                    &lt;/button&gt; <br>
+                    &lt;button class="simple-btn-black-hover"&gt; <br>
+                    No <br>
+                    &lt;/button&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;/div&gt; <br>
+
+                </div>
+
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Alert dialog box </div>
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+
+                <div class="showCase">
+
+                    <div class="modal-t1-alert">
+                        <div class="modal-t1-f">
+                            <span> Alert!!! </span>
+                            <span class="modal-t1-close-alert"> × </span>
+                        </div>
+                        <hr class="hrMoadal">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia officiis beatae
+                            cumque! Nihil ut voluptates dolorum, officia eos id accusamus necessitatibus soluta
+                            asperiores minima reiciendis, aliquam, culpa atque dignissimos.
+                        </p>
+                        <hr class="hrMoadal">
+                        <div class="modal-t1-btns">
+                            <button class="simple-btn-black-hover">
+                                Okay
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="codeSection">
+
+                    &lt;div class="modal-t1-alert"&gt; <br>
+                    &lt;div class="modal-t1-f"&gt; <br>
+                    &lt;span> Alert!!! &lt;/span&gt; <br>
+                    &lt;span class="modal-t1-close-alert"> × &lt;/span&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;hr class="hrMoadal"&gt; <br>
+                    &lt;p&gt; <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia officiis beatae
+                    cumque! Nihil ut voluptates dolorum, officia eos id accusamus necessitatibus soluta
+                    asperiores minima reiciendis, aliquam, culpa atque dignissimos.
+                    &lt;/p&gt; <br>
+                    &lt;hr class="hrMoadal"&gt; <br>
+                    &lt;div class="modal-t1-btns"&gt; <br>
+                    &lt;button class="simple-btn-black-hover"&gt; <br>
+                    Okay <br>
+                    &lt;/button&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;/div&gt;
+
+
+                </div>
+
+
+
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Prompt dialog box </div>
+
+                <div class="blankspace"> </div>
+
+
+
+                <div class="showCase">
+
+                    <div class="modal-t1-alert">
+                        <div class="modal-t1-f">
+                            <span> Enter your name: </span>
+                        </div>
+                        <hr class="hrMoadal">
+
+                        <input type="text" class="modal-t1-prompt">
+                        <hr class="hrMoadal">
+                        <div class="modal-t1-btns">
+                            <button class="simple-btn-black-hover">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;div class="modal-t1-alert"&gt; <br>
+                    &lt;div class="modal-t1-f"&gt; <br>
+                    &lt;span&gt; Enter your name: &lt;/span&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;hr class="hrMoadal"&gt; <br>
+                    &lt;input type="text" class="modal-t1-prompt"&gt; <br>
+                    &lt;hr class="hrMoadal"&gt; <br>
+                    &lt;div class="modal-t1-btns"&gt; <br>
+                    &lt;button class="simple-btn-black-hover"&gt; <br>
+                    Submit <br>
+                    &lt;/button&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;/div&gt;
+
+                </div>
+
+
+
+
+            </div>
+            <div class="blankspace"> </div>
+            <!-- -----------------Modal------------------------- -->
+
+
+
+            <!-- -----------------Navbar------------------------- -->
+
+
+            <div class="blankspace"> </div>
+
+            <div id="NAVBAR_JASS">
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Navigation bar </div>
+
+                <div class="topicDetails">
+
+                    A Navigation bar includes options, links and many more things.
+
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+                <div class="showCase">
+
+                    <div class="navbar-t1-w">
+                        <img src="j480.png" class="navbar-t1-w-img">
+                        <span class="navbar-t1-w-title"> Title </span>
+                        <div class="navbar-t1-w-right">
+                            <a href="#"> <strong> Home </strong> </a>
+                            <a href="#"> <span> Link 1 </span> </a>
+                            <a href="#"> <span> Link 2 </span> </a>
+                            <a href="#"> <span> Link 3 </span> </a>
+                            <a href="#"> <span> Link 4 </span> </a>
+                        </div>
+                        <div class="str8menu">
+                            <button class="simple-btn-white-hover ddbluhb">
+                                <strong>Menu</strong>
+                            </button>
+                            <div class="ddown-t2-menu-black">
+                                <ul>
+                                    <a href="#">
+                                        <li> Link 1 </li>
+                                    </a>
+                                    <a href="#">
+                                        <li> Link 2 </li>
+                                    </a>
+                                    <a href="#">
+                                        <li> Link 3 </li>
+                                    </a>
+                                    <a href="#">
+                                        <li> Link 4 </li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="codeSection">
+
+
+                    &lt;div class="navbar-t1-w"> <br>
+                    &lt;img src="j480.png" class="navbar-t1-w-img"&gt; <br>
+                    &lt;span class="navbar-t1-w-title"&gt; Title &lt;/span&gt; <br>
+                    &lt;div class="navbar-t1-w-right"&gt; <br>
+                    &lt;a href="#"&gt; &lt;strong&gt; Home &lt;/strong&gt; &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Link 1 &lt;/span&gt; &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Link 2 &lt;/span&gt; &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Link 3 &lt;/span&gt; &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Link 4 &lt;/span&gt; &lt;/a&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;div class="str8menu"&gt; <br>
+                    &lt;button class="simple-btn-white-hover ddbluhb"&gt; <br>
+                    &lt;strong&gt;Menu&lt;/strong&gt; <br>
+                    &lt;/button&gt; <br>
+                    &lt;div class="ddown-t2-menu-black"&gt; <br>
+                    &lt;ul&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Link 1 &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Link 2 &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Link 3 &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;a href="#"&gt; <br>
+                    &lt;li&gt; Link 4 &lt;/li&gt; <br>
+                    &lt;/a&gt; <br>
+                    &lt;/ul&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;/div&gt; <br>
+
+
+
+                </div>
+
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+
+                    <div class="navbar-t2">
+                        <img src="j_logo.png">
+                        <a href="#"><span> Home </span></a>
+                        <a href="#"><span> Downloads </span></a>
+                        <a href="#"><span> About us </span></a>
+
+                    </div>
+
+                    <div class="navbar-t2-red">
+                        <img src="j_logo.png">
+                        <a href="#"><span> Home </span></a>
+                        <a href="#"><span> Downloads </span></a>
+                        <a href="#"><span> About us </span></a>
+
+                    </div>
+
+                    <div class="navbar-t2-green">
+
+                        <img src="j_logo.png">
+                        <a href="#"><span> Home </span></a>
+                        <a href="#"><span> Downloads </span></a>
+                        <a href="#"><span> About us </span></a>
+
+                    </div>
+
+                    <div class="navbar-t2-blue">
+
+                        <img src="j_logo.png">
+                        <a href="#"><span> Home </span></a>
+                        <a href="#"><span> Downloads </span></a>
+                        <a href="#"><span> About us </span></a>
+
+                    </div>
+
+                    <div class="navbar-t2-yellow">
+
+                        <img src="j_logo.png">
+                        <a href="#"><span> Home </span></a>
+                        <a href="#"><span> Downloads </span></a>
+                        <a href="#"><span> About us </span></a>
+
+                    </div>
+
+                    <div class="navbar-t2-purple">
+
+                        <img src="j_logo.png">
+                        <a href="#"><span> Home </span></a>
+                        <a href="#"><span> Downloads </span></a>
+                        <a href="#"><span> About us </span></a>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="codeSection">
+
+                    &lt;div class="navbar-t2"&gt; <br>
+
+                    &lt;img src="j_logo.png"&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Home &lt;/span&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Downloads &lt;/span&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; About us &lt;/span&gt;&lt;/a&gt; <br>
+
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="navbar-t2-red"&gt; <br>
+
+                    &lt;img src="j_logo.png"&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Home &lt;/span&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Downloads &lt;/span&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; About us &lt;/span&gt;&lt;/a&gt; <br>
+
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="navbar-t2-green"&gt; <br>
+
+                    &lt;img src="j_logo.png"&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Home &lt;/span&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Downloads &lt;/span&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; About us &lt;/span&gt;&lt;/a&gt; <br>
+
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="navbar-t2-blue"&gt; <br>
+
+                    &lt;img src="j_logo.png"&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Home &lt;/span&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Downloads &lt;/span&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; About us &lt;/span&gt;&lt;/a&gt; <br>
+
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="navbar-t2-yellow"&gt; <br>
+
+                    &lt;img src="j_logo.png"&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Home &lt;/span&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Downloads &lt;/span&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; About us &lt;/span&gt;&lt;/a&gt; <br>
+
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="navbar-t2-purple"&gt; <br>
+
+                    &lt;img src="j_logo.png"&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Home &lt;/span&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; Downloads &lt;/span&gt;&lt;/a&gt; <br>
+                    &lt;a href="#"&gt; &lt;span&gt; About us &lt;/span&gt;&lt;/a&gt; <br>
+
+                    &lt;/div&gt; <br> <br>
+
+                </div>
+
+
+                <div class="blankspace"> </div>
+                <div class="normal-alerts-blue"> More components will be updated soon. </div>
+                <div class="blankspace"> </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <!-- -----------------Navbar------------------------- -->
+
+
+
+
+
+            <!-- -----------------Pagination------------------------- -->
+
+
+
+
+
+            <!-- 
+            <div class="blankspace"> </div>
+
+            <div id="PAGINATION_JASS">
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Pagination </div>
+
+                <div class="topicDetails">
+
+                    Pagination indicate a series of related content exists across multiple pages.
+
+                </div>
+
+                <div class="blankspace"> </div>
+
+                <div class="showCase">
+
+                    <div class="page-t1">
+                      <a href="#">  <span> Previous </span> </a>
+                      <a href="#">  <span> 1 </span> </a>
+                      <a href="#">  <span> 2 </span> </a> 
+                      <a href="#">  <span> 3 </span> </a>
+                      <a href="#">  <span> Next </span> </a>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div> -->
+
+            <!-- -----------------Pagination------------------------- -->
+
+            <!-- -----------------Progress------------------------- -->
+
+
+
+            <div class="blankspace"> </div>
+
+            <div id="PROGRESSBAR_JASS">
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Progress bar </div>
+
+                <div class="topicDetails">
+
+                    Progress bars featuring support for stacked bars.
+
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-blue"></div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-blue-a"></div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-blue-b"></div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-blue-c"></div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-blue-d"></div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="codeSection">
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-blue"&gt;&lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-blue-a"&gt;&lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-blue-b"&gt;&lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-blue-c"&gt;&lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-blue-d"&gt;&lt;/div&gt; <br>
+                    &lt;/div&gt;
+
+                </div>
+
+
+
+                <div class="blankspace"> </div>
+
+
+
+                <div class="showCase">
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-blue"> 100% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-blue-a"> 80% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-blue-b"> 60% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-blue-c"> 40% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-blue-d"> 20% </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="codeSection">
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-blue"&gt; 100% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-blue-a"&gt; 80% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-blue-b"&gt; 60% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-blue-c"&gt; 40% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-blue-d"&gt; 20% &lt;/div&gt; <br>
+                    &lt;/div&gt;
+
+                </div>
+
+
+
+
+
+
+
+
+                <div class="blankspace"> </div>
+
+
+                <div class="showCase">
+
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-red-b"> 60% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-green-b"> 60% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-blue-b"> 60% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-yellow-b"> 60% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-cyan-b"> 60% </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="codeSection">
+
+
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-red-b"&gt; 60% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-green-b"&gt; 60% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-blue-b"&gt; 60% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-yellow-b"&gt; 60% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-cyan-b"&gt; 60% &lt;/div&gt; <br>
+                    &lt;/div&gt;
+
+                </div>
+
+
+                <div class="blankspace"> </div>
+
+
+
+                <div class="showCase">
+
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-red-a"> 80% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-green-a"> 80% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-blue-a"> 80% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-yellow-a"> 80% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-cyan-a"> 80% </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="codeSection">
+
+
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-red-a"&gt; 80% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-green-a"&gt; 80% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-blue-a"&gt; 80% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-yellow-a"&gt; 80% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-cyan-a"&gt; 80% &lt;/div&gt; <br>
+                    &lt;/div&gt;
+
+                </div>
+
+
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+
+                <div class="showCase">
+
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-red"> 100% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-green"> 100% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-blue"> 100% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-yellow"> 100% </div>
+                    </div>
+
+                    <div class="pbar-t1-brdr">
+                        <div class="pbar-t1-cyan"> 100% </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="codeSection">
+
+
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-red"&gt; 100% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-green"&gt; 100% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-blue"&gt; 100% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-yellow"&gt; 100% &lt;/div&gt; <br>
+                    &lt;/div&gt; <br> <br>
+
+                    &lt;div class="pbar-t1-brdr"&gt; <br>
+                    &lt;div class="pbar-t1-cyan"&gt; 100% &lt;/div&gt; <br>
+                    &lt;/div&gt;
+
+                </div>
+
+
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+
+            </div>
+
+            <!-- -----------------Progress------------------------- -->
+
+            <!-- -----------------spinner------------------------- -->
+
+
+            <div class="blankspace"> </div>
+
+            <div id="SPINNER_JASS">
+
+                <div class="blankspace"> </div>
+
+                <div class="topicHeading"> Spinner </div>
+
+                <div class="topicDetails">
+
+                    Indicate the loading state of a component or page with JASS spinners.
+
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+
+
+
+
+
+
+                <div class="showCase">
+
+                    <div class="spinner-t1"></div>
+
+                </div>
+                <div class="codeSection">
+
+                    &lt;div class="spinner-t1"&gt;&lt;/div&gt;
+
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="showCase">
+                    <div class="flexboxROW">
+                        <div class="spinner-t1-red"></div>
+                        <div class="spinner-t1-green"></div>
+                        <div class="spinner-t1-blue"></div>
+                        <div class="spinner-t1-yellow"></div>
+                        <div class="spinner-t1-cyan"></div>
+                    </div>
+                </div>
+                <div class="codeSection">
+
+                    &lt;div class="spinner-t1-red"&gt;&lt;/div&gt; <br>
+                    &lt;div class="spinner-t1-green"&gt;&lt;/div&gt; <br>
+                    &lt;div class="spinner-t1-blue"&gt;&lt;/div&gt; <br>
+                    &lt;div class="spinner-t1-yellow"&gt;&lt;/div&gt; <br>
+                    &lt;div class="spinner-t1-cyan"&gt;&lt;/div&gt;
+
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+
+
+                <div class="showCase">
+                    <div class="flexboxROW">
+                        <div class="spinner-t1-redl"></div>
+                        <div class="spinner-t1-greenl"></div>
+                        <div class="spinner-t1-bluel"></div>
+                        <div class="spinner-t1-yellowl"></div>
+                        <div class="spinner-t1-cyanl"></div>
+                    </div>
+                </div>
+                <div class="codeSection">
+
+                    &lt;div class="spinner-t1-redl"&gt;&lt;/div&gt; <br>
+                    &lt;div class="spinner-t1-greenl"&gt;&lt;/div&gt; <br>
+                    &lt;div class="spinner-t1-bluel"&gt;&lt;/div&gt; <br>
+                    &lt;div class="spinner-t1-yellowl"&gt;&lt;/div&gt; <br>
+                    &lt;div class="spinner-t1-cyanl"&gt;&lt;/div&gt;
+
+                </div>
+
+                <div class="blankspace"> </div>
+
+
+
+
+
+                <div class="showCase">
+                    <div class="flexboxROW">
+                        <div class="spinner-t2-black"></div>
+                        <div class="spinner-t2-red"></div>
+                        <div class="spinner-t2-green"></div>
+                        <div class="spinner-t2-blue"></div>
+                        <div class="spinner-t2-yellow"></div>
+                        <div class="spinner-t2-cyan"></div>
+                        <div class="spinner-t2-pink"></div>
+                        <div class="spinner-t2-white"></div>
+                    </div>
+                </div>
+
+
+                <div class="codeSection">
+
+                    &lt;div class="spinner-t2-black"&gt;&lt;/div&gt; <br>
+                    &lt;div class="spinner-t2-red"&gt;&lt;/div&gt; <br>
+                    &lt;div class="spinner-t2-green"&gt;&lt;/div&gt; <br>
+                    &lt;div class="spinner-t2-blue"&gt;&lt;/div&gt; <br>
+                    &lt;div class="spinner-t2-yellow"&gt;&lt;/div&gt; <br>
+                    &lt;div class="spinner-t2-cyan"&gt;&lt;/div&gt; <br>
+                    &lt;div class="spinner-t2-pink"&gt;&lt;/div&gt; <br>
+                    &lt;div class="spinner-t2-white"&gt;&lt;/div&gt;
+
+                </div>
+
+                <div class="blankspace"> </div>
+                <div class="blankspace"> </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <!-- -----------------spinner------------------------- -->
+
+
+
+
+
+
+
+            <!-- endDetails -->
+
+        </div>
+    </main>
+
+    <!-- ============ -->
+
+    <div class="ResponsiveMenu">
+        <a href="#ALERTS_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                version="1.1" data-view-component="true" height="16" width="16"
+                class="octicon octicon-repo flex-shrink-0">
+                <path fill-rule="evenodd"
+                    d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                </path>
+            </svg>
+            <div class="compNames"> Alerts </div>
+        </a>
+
+        <a href="#BADGE_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                version="1.1" data-view-component="true" height="16" width="16"
+                class="octicon octicon-repo flex-shrink-0">
+                <path fill-rule="evenodd"
+                    d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                </path>
+            </svg>
+            <div class="compNames"> Badge </div>
+        </a>
+        <a href="#BUTTONS_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                version="1.1" data-view-component="true" height="16" width="16"
+                class="octicon octicon-repo flex-shrink-0">
+                <path fill-rule="evenodd"
+                    d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                </path>
+            </svg>
+            <div class="compNames"> Buttons </div>
+        </a>
+        <a href="#CARDS_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                version="1.1" data-view-component="true" height="16" width="16"
+                class="octicon octicon-repo flex-shrink-0">
+                <path fill-rule="evenodd"
+                    d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                </path>
+            </svg>
+            <div class="compNames"> Card </div>
+        </a>
+        <a href="#DROPDOWN_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                version="1.1" data-view-component="true" height="16" width="16"
+                class="octicon octicon-repo flex-shrink-0">
+                <path fill-rule="evenodd"
+                    d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                </path>
+            </svg>
+            <div class="compNames"> Dropdown </div>
+        </a>
+        <a href="#LISTGROUP_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                version="1.1" data-view-component="true" height="16" width="16"
+                class="octicon octicon-repo flex-shrink-0">
+                <path fill-rule="evenodd"
+                    d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                </path>
+            </svg>
+            <div class="compNames"> List Group </div>
+        </a>
+        <a href="#MODAL_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                version="1.1" data-view-component="true" height="16" width="16"
+                class="octicon octicon-repo flex-shrink-0">
+                <path fill-rule="evenodd"
+                    d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                </path>
+            </svg>
+            <div class="compNames"> Modal </div>
+        </a>
+        <a href="#NAVBAR_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                version="1.1" data-view-component="true" height="16" width="16"
+                class="octicon octicon-repo flex-shrink-0">
+                <path fill-rule="evenodd"
+                    d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                </path>
+            </svg>
+            <div class="compNames"> Navigation bar </div>
+        </a>
+        <!-- <a href="#PAGINATION_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                version="1.1" data-view-component="true" height="16" width="16"
+                class="octicon octicon-repo flex-shrink-0">
+                <path fill-rule="evenodd"
+                    d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                </path>
+            </svg>
+            <div class="compNames"> Paginaton </div>
+        </a> -->
+        <a href="#PROGRESSBAR_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                version="1.1" data-view-component="true" height="16" width="16"
+                class="octicon octicon-repo flex-shrink-0">
+                <path fill-rule="evenodd"
+                    d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                </path>
+            </svg>
+            <div class="compNames"> Progress bar </div>
+        </a>
+        <a href="#SPINNER_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                version="1.1" data-view-component="true" height="16" width="16"
+                class="octicon octicon-repo flex-shrink-0">
+                <path fill-rule="evenodd"
+                    d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                </path>
+            </svg>
+            <div class="compNames"> Spinner </div>
+        </a>
+        <!-- <a href="#MESSAGE_JASS" class="repocomp"> <svg aria-label="Repository" role="img" viewBox="0 0 16 16"
+                version="1.1" data-view-component="true" height="16" width="16"
+                class="octicon octicon-repo flex-shrink-0">
+                <path fill-rule="evenodd"
+                    d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                </path>
+            </svg>
+            <div class="compNames"> Messages </div>
+        </a> -->
+
+    </div>
+
+    <input type="image" src="mICON.png" class="ResponsiveICON">
+    <input type="image" src="mICON.png" class="ResponsiveICON2">
+
+
+
+
+
+
+
+
+</body>
+
+</html>

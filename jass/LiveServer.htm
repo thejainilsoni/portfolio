@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://jainilsoni1706.github.io/jass/j144.png">
+    <title>HTML Editor by Jainil</title>
+</head>
+<body oncontextmenu="return false">
+<div class="header_of-the_editor--This_Editor-x">
+    <img src="https://jainilsoni1706.github.io/jass/j144.png" class="logo-of_The-Text__Editor-x">
+    <span class="header_heading_main-Container--x">HTML Editor</span>
+    <!-- <span class="header--jass_link_container-X"><a href="https://jainilsoni1706.github.io/newJASS/getJASS.htm"> JASS - CSS </a></span> -->
+    <button class="Live-Demo_button_number-1_x" onclick="run_code__html_editor()">Run Code</button>
+</div>
+<div class="container_Of-theLive_Server-x">
+    <div class="left_container-of_th__LiveServer-x">
+        <textarea onkeyup="run_code__html_editor1()" class="textare_the--class_of--Editor_x" style="overflow:scroll;"></textarea>
+    </div>
+    <div class="right_container-of_th__LiveServer-x"  style="overflow:scroll;"></div>
+</div>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        textarea:focus,input,button{
+            outline:none;
+        }
+        .header_of-the_editor--This_Editor-x{
+            width: 100%;
+            height: 70px;
+            background-color: #b13f22;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 5px;
+        }
+        .logo-of_The-Text__Editor-x{
+            height: 70%;
+            width: 50px;
+            margin-left: 10px;
+        }
+        .header_heading_main-Container--x{
+            color: white;
+            font-weight: 900;
+            font-size: 0.6cm;
+            margin-left: 20px;
+        }
+        .Live-Demo_button_number-1_x{
+            background-color: #b13f22;
+            color: white;
+            font-weight: 600;
+            padding: 6px 10px;
+            border-radius: 7px;
+            border: 1px solid white;
+            position: absolute;
+            right: 10px;
+        }
+       
+        .header--jass_link_container-X{
+            font-size: 70%;
+        }
+        span a{
+            text-decoration: none;
+            color: white;
+        }
+        span a:hover{
+            text-decoration: underline white;
+            color: white;
+        }
+        ::selection{
+            background: #b13f22;
+            color: white;
+        }
+        .container_Of-theLive_Server-x{
+            height: 95vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+        .right_container-of_th__LiveServer-x{
+            width: 95.5vw;
+            height: 46vh;
+            border: 1px solid black;
+            margin: 0px 2%;
+            overflow :scroll;
+        }
+        button{
+            cursor: pointer;
+        }
+        .textare_the--class_of--Editor_x{
+            width: 95vw;
+            height: 48vh;
+            border: 1px solid black;
+            margin: 0px 2%;
+        }
+    </style>
+    <script>
+document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     return false;
+  }
+}
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+let input_var_of___Editor = document.querySelector('.textare_the--class_of--Editor_x');
+
+run_code__html_editor = () => {
+document.querySelector('.right_container-of_th__LiveServer-x').innerHTML = input_var_of___Editor.value;
+}
+
+
+run_code__html_editor1 = () => {
+document.querySelector('.right_container-of_th__LiveServer-x').innerHTML = input_var_of___Editor.value;
+}
+
+    </script>
+</body>
+</html>
