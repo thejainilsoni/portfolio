@@ -11,7 +11,7 @@ class TestController extends Controller
     public function index()
     {
         $start = '2022-01-01';
-        $end = '2022-12-31';
+        $end = '2022-01-31';
 
         $records = DB::table('test')->get()->toArray();
         $modifiedRecords = [];
@@ -30,17 +30,16 @@ class TestController extends Controller
             endif;
 
             if ( ($start >= $record->contract_startdate && $end <= $record->contract_enddate) || ($start >= $record->contract_startdate && $end >= $record->contract_enddate && $start <= $record->enddate) ) {
-                $modifiedRecords[] = $record;
+                $modifiedRecords[] = array('data' => $record, 'absent' => self::dateDiff($record->startdate, $record->enddate));
             } else if ( ($start <= $record->contract_startdate && $end >= $record->contract_enddate) || ($start <= $record->contract_startdate && $end <= $record->contract_enddate && $start >= $record->enddate) ) {
-                $modifiedRecords[] = $record;
+                $modifiedRecords[] = array('data' => $record, 'absent' => self::dateDiff($record->startdate, $record->enddate));
             } else if ( ($start <= $record->contract_startdate && $end <= $record->contract_enddate && $end >= $record->contract_startdate) || ($start <= $record->contract_startdate && $end >= $record->contract_enddate && $end >= $record->contract_startdate) ) {
-                $modifiedRecords[] = $record;
+                $modifiedRecords[] = array('data' => $record, 'absent' => self::dateDiff($record->startdate, $record->enddate));
             } else if ( ($start >= $record->contract_startdate && $end <= $record->contract_enddate) || ($start >= $record->contract_startdate && $end >= $record->contract_enddate && $start <= $record->enddate) ) {
-                $modifiedRecords[] = $record;
+                $modifiedRecords[] = array('data' => $record, 'absent' => self::dateDiff($record->startdate, $record->enddate));
             } else if ( ($start >= $record->contract_startdate && $end >= $record->contract_enddate && $start <= $record->enddate) || ($start >= $record->contract_startdate && $end >= $record->contract_enddate && $start <= $record->enddate) ) {
-                $modifiedRecords[] = $record;
+                $modifiedRecords[] = array('data' => $record, 'absent' => self::dateDiff($record->startdate, $record->enddate));
             }
-
         }
         
         dd($modifiedRecords);
@@ -51,10 +50,10 @@ class TestController extends Controller
     {
         for ($i =1; $i<=25; $i++) {
             $employee_id = mt_rand(1, 25);
-            $contract_start = mt_rand(2021,2022) . '-' . mt_rand(01,12) . '-' . mt_rand(1,31);
-            $contract_end = mt_rand(2023,2023) . '-' . mt_rand(01,12) . '-' . mt_rand(1,31);
-            $absent_start = mt_rand(2021,2022) . '-' . mt_rand(01,12) . '-' . mt_rand(1,31);
-            $absent_end = mt_rand(2022,2023) . '-' . mt_rand(01,12) . '-' . mt_rand(1,31);
+            $contract_start = mt_rand(2021,2023) . '-' . mt_rand(01,12) . '-' . mt_rand(1,31);
+            $contract_end = mt_rand(2021,2023) . '-' . mt_rand(01,12) . '-' . mt_rand(1,31);
+            $absent_start = mt_rand(2021,2023) . '-' . mt_rand(01,12) . '-' . mt_rand(1,31);
+            $absent_end = mt_rand(2021,2023) . '-' . mt_rand(01,12) . '-' . mt_rand(1,31);
 
             DM::table('test')->insert([
                 'employeeid' => $employee_id,
@@ -67,4 +66,13 @@ class TestController extends Controller
 
         echo 'Record inserted successfully.';
     }
+
+    // count total days between two dates
+    public static function dateDiff($date1, $date2)
+    {
+        $diff = strtotime($date2) - strtotime($date1);
+        return (int)abs(round($diff / 86400));
+    }
+
+
 }
