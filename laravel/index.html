@@ -15,7 +15,14 @@ class TestController extends Controller
 
         $records = DB::table('test')->get()->toArray();
         $modifiedRecords = [];
+
+        $records = DB::table('test')->where(DB::raw("((`contract_startdate` <= '$start' AND `contract_enddate` >= '$end') OR (`contract_startdate` <= '$start' AND `contract_enddate` <= '$end' AND `contract_enddate` >= '$start')) OR ((`contract_startdate` >= '$start' AND `contract_enddate` <= '$end') OR (`contract_startdate` >= '$start' AND `contract_enddate` >= '$end' AND `contract_enddate` <= '$start')) OR ((`contract_startdate` >= '$start' AND `contract_enddate` >= '$end' AND `contract_startdate` <= '$end') OR (`contract_startdate` >= '$start' AND `contract_enddate` <= '$end' AND `contract_startdate` <= '$end')) OR ((`contract_startdate` <= '$start' AND `contract_enddate` >= '$end') OR ( `contract_startdate` <= '$start' AND  `contract_enddate` <= '$end' AND  `contract_enddate` >= '$start')) OR ((`contract_startdate` <= '$start' AND  `contract_enddate` <= '$end' AND  `contract_enddate` >= '$start') OR (`contract_startdate` <= '$start' AND  `contract_enddate` <= '$end' AND `contract_enddate` >= '$start'))"))->get()->toArray();
+        dd($records);
         
+        $records = DB::table('test')->where(DB::raw("((`contract_startdate` <= '$start' AND `contract_enddate` >= '$end') OR (`contract_startdate` <= '$start' AND `contract_enddate` <= '$end' AND `contract_enddate` >= '$start')) OR ((`contract_startdate` >= '$start' AND `contract_enddate` <= '$end') OR (`contract_startdate` >= '$start' AND `contract_enddate` >= '$end' AND `contract_enddate` <= '$start')) OR ((`contract_startdate` >= '$start' AND `contract_enddate` >= '$end' AND `contract_startdate` <= '$end') OR (`contract_startdate` >= '$start' AND `contract_enddate` <= '$end' AND `contract_startdate` <= '$end')) OR ((`contract_startdate` <= '$start' AND `contract_enddate` >= '$end') OR ( `contract_startdate` <= '$start' AND  `contract_enddate` <= '$end' AND  `contract_enddate` >= '$start')) OR ((`contract_startdate` <= '$start' AND  `contract_enddate` <= '$end' AND  `contract_enddate` >= '$start') OR (`contract_startdate` <= '$start' AND  `contract_enddate` <= '$end' AND `contract_enddate` >= '$start'))"))->get()->toArray();
+        dd($records);
+        $modifiedRecords = [];
+
         // false else if (filter_start < start_date AND filter_end_date > end_date OR filter_start < start_date AND filter_end_date < end_date AND filter_end_date > start_date)
 
         // if (filter_start > start_date AND filter_end_date < end_date OR filter_start > start_date AND filter_end_date > end_date AND filter_start_date < end_date)
